@@ -13,10 +13,11 @@
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/theme.css" rel="stylesheet" />
+    <link href="css/redesign.css" rel="stylesheet" />
 </head>
-<body>
+<body class="page-body page-publication">
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light site-navbar">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="MUSE Lab home">
                 <img src="assets/muse-lab-logo.svg" alt="MUSE Lab logo" class="muse-logo">
@@ -29,16 +30,234 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">MUSE Lab</a></li>
                     <li class="nav-item"><a class="nav-link" href="mariamguizani.html">Dr. Guizani</a></li>
                     <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="publication.html">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
                     <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <main class="page-main">
 
     <!-- Publication Section -->
-   <div> <p> Under Construction </p> </div>  
+    <div class="container mt-4">
+        <div class="publication-hero content-card">
+            <p class="section-kicker">Publications</p>
+            <h1 class="page-title mb-3">Research outputs and publication layout preview.</h1>
+            <p class="page-intro mb-0">The publication list is being curated. The cards below show the intended academic presentation: venue, year, type, lab-member highlighting, and links for papers, citation data, code, and BibTeX.</p>
+            <div class="scholar-metrics">
+                <div class="scholar-metric">
+                    <span class="scholar-metric__value">487</span>
+                    <span class="scholar-metric__label">Citations</span>
+                </div>
+                <div class="scholar-metric">
+                    <span class="scholar-metric__value">15</span>
+                    <span class="scholar-metric__label">h-index</span>
+                </div>
+                <div class="scholar-metric">
+                    <span class="scholar-metric__value">15</span>
+                    <span class="scholar-metric__label">i10-index</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="publication-toolbar">
+            <div>
+                <span class="filter-chip">All years</span>
+                <span class="filter-chip">All types</span>
+                <span class="filter-chip">All themes</span>
+            </div>
+            <span class="text-muted small">Example layout preview</span>
+        </div>
+
+        <section class="pub-group">
+            <h2 class="pub-year">2025</h2>
+            <div class="pub-list">
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2025</span>
+                        <span class="pub-card__type">conference</span>
+                        <span class="pub-card__citations">3 citations</span>
+                    </div>
+                    <h3>Reverse Engineering User Stories from Code using Large Language Models</h3>
+                    <p class="pub-authors">M. Ouf, H. Li, M. Zhang, <strong>M. Guizani</strong></p>
+                    <p class="pub-venue">35th IEEE International Conference on Collaborative Advances in Software and Computing</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2025</span>
+                        <span class="pub-card__type">preprint</span>
+                        <span class="pub-card__citations">18 citations</span>
+                    </div>
+                    <h3>The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Review and Mapping Study</h3>
+                    <p class="pub-authors">A. Mohamed, M. Assi, <strong>M. Guizani</strong></p>
+                    <p class="pub-venue">arXiv preprint arXiv:2507.03156</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="pub-group">
+            <h2 class="pub-year">2024</h2>
+            <div class="pub-list">
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2024</span>
+                        <span class="pub-card__type">book chapter</span>
+                        <span class="pub-card__citations">22 citations</span>
+                    </div>
+                    <h3>How to measure diversity actionably in technology</h3>
+                    <p class="pub-authors">M. M. Hamid, A. Chatterjee, <strong>M. Guizani</strong>, A. Anderson, F. Moussaoui, S. Yang, and collaborators</p>
+                    <p class="pub-venue">Equity, Diversity, and Inclusion in Software Engineering: Best Practices and Insights</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="pub-group">
+            <h2 class="pub-year">2023</h2>
+            <div class="pub-list">
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2023</span>
+                        <span class="pub-card__type">conference</span>
+                        <span class="pub-card__citations">23 citations</span>
+                        <span class="pub-card__selected">Selected</span>
+                    </div>
+                    <h3>Rules of engagement: Why and how companies participate in OSS</h3>
+                    <p class="pub-authors"><strong>M. Guizani</strong>, A. A. Castro-Guzman, A. Sarma, I. Steinmacher</p>
+                    <p class="pub-venue">2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">DOI</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2023</span>
+                        <span class="pub-card__type">preprint</span>
+                        <span class="pub-card__citations">16 citations</span>
+                    </div>
+                    <h3>The state of diversity and inclusion in Apache: A pulse check</h3>
+                    <p class="pub-authors">Z. Feng, <strong>M. Guizani</strong>, M. A. Gerosa, A. Sarma</p>
+                    <p class="pub-venue">arXiv preprint arXiv:2303.16344</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="pub-group">
+            <h2 class="pub-year">2022</h2>
+            <div class="pub-list">
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2022</span>
+                        <span class="pub-card__type">conference</span>
+                        <span class="pub-card__citations">48 citations</span>
+                        <span class="pub-card__selected">Selected</span>
+                    </div>
+                    <h3>Attracting and retaining OSS contributors with a maintainer dashboard</h3>
+                    <p class="pub-authors"><strong>M. Guizani</strong>, T. Zimmermann, A. Sarma, D. Ford</p>
+                    <p class="pub-venue">Proceedings of the 2022 ACM/IEEE 44th International Conference on Software Engineering</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">DOI</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2022</span>
+                        <span class="pub-card__type">conference</span>
+                        <span class="pub-card__citations">39 citations</span>
+                    </div>
+                    <h3>How to debug inclusivity bugs? A debugging process with information architecture</h3>
+                    <p class="pub-authors"><strong>M. Guizani</strong>, I. Steinmacher, J. Emard, A. Fallatah, M. Burnett, A. Sarma</p>
+                    <p class="pub-venue">Proceedings of the 2022 ACM/IEEE 44th International Conference on Software Engineering</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="pub-group">
+            <h2 class="pub-year">2021 and 2020</h2>
+            <div class="pub-list">
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2021</span>
+                        <span class="pub-card__type">journal</span>
+                        <span class="pub-card__citations">54 citations</span>
+                        <span class="pub-card__selected">Selected</span>
+                    </div>
+                    <h3>The Long Road Ahead: Ongoing Challenges in Contributing to Large OSS Organizations and What to Do</h3>
+                    <p class="pub-authors"><strong>M. Guizani</strong>, A. Chatterjee, B. Trinkenreich, M. E. May, G. J. Noa-Guevara, and collaborators</p>
+                    <p class="pub-venue">Proceedings of the ACM on Human-Computer Interaction, CSCW2</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+                <article class="pub-card">
+                    <div class="pub-card__meta">
+                        <span class="pub-card__year">2020</span>
+                        <span class="pub-card__type">journal</span>
+                        <span class="pub-card__citations">93 citations</span>
+                        <span class="pub-card__selected">Selected</span>
+                    </div>
+                    <h3>Hidden figures: Roles and pathways of successful OSS contributors</h3>
+                    <p class="pub-authors">B. Trinkenreich, <strong>M. Guizani</strong>, I. Wiese, A. Sarma, I. Steinmacher</p>
+                    <p class="pub-venue">Proceedings of the ACM on Human-Computer Interaction, CSCW2</p>
+                    <div class="pub-actions">
+                        <a href="#" class="pub-action">PDF</a>
+                        <a href="#" class="pub-action">BibTeX</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="content-card mt-4">
+            <h2 class="section-title h4">Research Connections</h2>
+            <p class="mb-0">Selected co-authors and research collaborators represented in Dr. Guizani's publication network.</p>
+            <div class="connection-grid" aria-label="Research collaborators">
+                <span class="connection-chip">Anita Sarma</span>
+                <span class="connection-chip">Igor Steinmacher</span>
+                <span class="connection-chip">Bianca Trinkenreich</span>
+                <span class="connection-chip">Marco Aurelio Gerosa</span>
+                <span class="connection-chip">Margaret Burnett</span>
+                <span class="connection-chip">Thomas Zimmermann</span>
+                <span class="connection-chip">Denae Ford</span>
+                <span class="connection-chip">Eugene Zhang</span>
+                <span class="connection-chip">Meghna Babbar-Sebens</span>
+                <span class="connection-chip">Alexander Serebrenik</span>
+                <span class="connection-chip">Brittany I. Johnson</span>
+                <span class="connection-chip">Elijah Kayode Adejumo</span>
+                <span class="connection-chip">Aaliyah Chang</span>
+            </div>
+        </div>
+
+        <div class="content-card mt-4">
+            <h2 class="section-title h4">Future publication workflow</h2>
+            <p class="mb-0">In the final version, each paper can be generated from a BibTeX or structured data file so the page stays easy to maintain while still looking polished and complete.</p>
+        </div>
+    </div>  
+    </main>
 
   
 

@@ -13,10 +13,11 @@
         <!-- Custom CSS -->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/theme.css" rel="stylesheet" />
+        <link href="css/redesign.css" rel="stylesheet" />
       </head>
-    <body>
+    <body class="page-body page-pi">
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light site-navbar">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="MUSE Lab home">
                     <img src="assets/muse-lab-logo.svg" alt="MUSE Lab logo" class="muse-logo">
@@ -25,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">MUSE Lab</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mariamguizani.html">Dr. Guizani</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="mariamguizani.html">Dr. Guizani</a></li>
                     <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
                     <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
@@ -34,6 +35,7 @@
                 </div>
             </div>
         </nav>
+        <main class="page-main">
 
         <div class="container bio-container">
           <div class="row">
@@ -41,7 +43,7 @@
               <img src="photos/mariamguizani.jpeg" alt="Researcher" class="img-fluid bio-image">
             </div>
             <div class="col-sm-9">
-              <h2>Mariam Guizani, PhD.</h2>
+              <h2 class="page-title">Mariam Guizani, PhD.</h2>
                 <p class="text-justify"> Dr. Mariam Guizani is an Assistant Professor in the <a href="https://smithengineering.queensu.ca/ece/index" target="_blank">
                     Department of Electrical and Computer Engineering, Queen's University, Canada</a>.
                     She holds a PhD and second MSc in Computer Science from <a href="https://engineering.oregonstate.edu/Academics/Degrees/computer-science" target="_blank"> Oregon State University </a> and was a <a href="https://smithengineering.queensu.ca/ece/index" target="_blank"> Fulbright fellowship </a> recipient in 2016-2018.
@@ -61,10 +63,11 @@
           <div class="row">
             <div class="col-sm-8">
 
-                <h2> News </h2>
+                <h2 class="section-title">News</h2>
+                <div class="news-card p-4">
                 <div class="row">
                 <div class = "col-sm-2">
-                    <span class="badge badge-dark">Apr 2024</span>
+                    <span class="news-badge">Apr 2024</span>
                 </div>
                 <div class = "col-sm-10">
                     <p>  Dr. Mariam Guizani received the <a href="https://www.queensu.ca/ctl/awards/internal-awards/institutional-awards#Frank-Knox-Award" target="_blank"> Frank Knox Award </a> for Excellence in Teaching.
@@ -73,15 +76,19 @@
                     </p>
                 </div>
               </div>
+              </div>
 
             </div>
 
               <div class="col-sm-4">
-              <h2> Twitter feed </h2>
+              <h2 class="section-title">Twitter</h2>
+                  <div class="twitter-card">
                   <a class="twitter-timeline" href="https://twitter.com/mariam_gui?ref_src=twsrc%5Etfw">Tweets by mariam_gui</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
               </div>
           </div>
         </div>
+        </main>
 
         <!-- Footer-->
 

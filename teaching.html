@@ -12,15 +12,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/theme.css" rel="stylesheet" />
+    <link href="css/redesign.css" rel="stylesheet" />
 </head>
-<body>
+<body class="page-body page-teaching">
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg site-navbar">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="MUSE Lab home">
                 <img src="assets/muse-lab-logo.svg" alt="MUSE Lab logo" class="muse-logo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,16 +30,18 @@
                     <li class="nav-item"><a class="nav-link" href="mariamguizani.html">Dr. Guizani</a></li>
                     <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
                     <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="teaching.html">Teaching</a></li>
                     <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <main class="page-main">
 
     <!-- Teaching Section -->
-    <div class="container mt-5">
-        <h2 class="section-title mb-4">Teaching</h2>
+    <div class="container mt-4">
+        <h2 class="page-title mb-2">Teaching</h2>
+        <p class="page-intro">Courses, supervision, and project mentoring activities led by Dr. Guizani at Queen's University.</p>
 
         <!-- Courses Teaching -->
         <div class="mb-5">
@@ -73,6 +76,7 @@
             </div>
         </div>
     </div>
+    </main>
 
     
 
