@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Mariam Guizani",
+    "aliases": ["M. Guizani", "Mariam G."],
+    "role": "Principal Investigator",
+    "semantic_scholar_ids": ["1999402349", "2374475735"],
+    "active": true
+  },
+  {
+    "name": "Robyn Elliot",
+    "aliases": ["R. Elliot"],
+    "role": "PhD Student",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Mohamed Ouf",
+    "aliases": ["Mohamed Ashraf Ouf", "M. Ouf", "Mohamad Ashraf"],
+    "role": "MASc Student",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Amr Mohamed",
+    "aliases": ["A. Mohamed", "Amr M."],
+    "role": "MASc Student",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Michael Zhang",
+    "aliases": ["M. Zhang"],
+    "role": "MEng Student",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Aaliyah Chang",
+    "aliases": ["A. Chang"],
+    "role": "MASc Student",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Yawar Ashraf",
+    "aliases": ["Y. Ashraf"],
+    "role": "MASc Student",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Zeph Van Iterson",
+    "aliases": ["Z. Van Iterson"],
+    "role": "Undergraduate Research Assistant",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Haoyu Li",
+    "aliases": ["H. Li"],
+    "role": "Alumni (MEng)",
+    "semantic_scholar_ids": [],
+    "active": false
+  },
+  {
+    "name": "Elias Frigui",
+    "aliases": ["E. Frigui"],
+    "role": "Alumni (Research Assistant)",
+    "semantic_scholar_ids": [],
+    "active": false
+  }
+]

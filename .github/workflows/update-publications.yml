@@ -1,0 +1,51 @@
+name: Update Publications
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 1 * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch and update publications
+        run: python scripts/fetch_publications.py --no-pr
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet data/publications.json publication.html; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create pull request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/update-publications
+          commit-message: "update publications ${{ github.run_id }}"
+          title: "Update publications — ${{ github.event.repository.updated_at }}"
+          body: |
+            Automated publication update from Semantic Scholar.
+
+            Run triggered: ${{ github.event_name }}
+            Date: ${{ github.event.repository.updated_at }}
+
+            Please review the new papers and verify topic classifications before merging.
+          labels: publications, automated

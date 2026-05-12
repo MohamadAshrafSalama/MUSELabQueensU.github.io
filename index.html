@@ -6,24 +6,24 @@
         <meta name="description" content="Explore Mariam Guizani's MUSE Lab - advancing research in software engineering, diversity in tech, and open-source communities at Queen's University.">
         <meta name="keywords" content="Mariam Guizani, MUSE Lab, Queen's University, Software Engineering, Diversity in Technology, Open Source Research, Publications, Teaching, Research Lab">
         <meta name="author" content="Mariam Guizani" />
-        <meta property="og:title" content="Mariam Guizani - MUSE Lab" />
-        <meta property="og:description" content="Discover Mariam Guizani's MUSE Lab - pioneering research in software engineering, inclusivity, and open-source communities." />
+        <meta property="og:title" content="MUSE Lab - Queen's University" />
+        <meta property="og:description" content="The Moving Intelligent User-Centric Software Engineering Lab at Queen's University." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourwebsite.github.io" />
-        <meta property="og:image" content="assets/og-image.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mariam Guizani - MUSE Lab" />
-        <meta name="twitter:description" content="Explore cutting-edge software engineering research at Mariam Guizani's MUSE Lab, Queen's University." />
-        <meta name="twitter:image" content="assets/twitter-image.jpg" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="MUSE Lab - Queen's University" />
+        <meta name="twitter:description" content="The Moving Intelligent User-Centric Software Engineering Lab at Queen's University." />
         <title>Mariam Guizani - MUSE Lab</title>
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/theme.css" rel="stylesheet" />
         <link href="css/redesign.css" rel="stylesheet" />
+        <link rel="prefetch" href="publication.html">
+        <link rel="prefetch" href="members.html">
+        <link rel="prefetch" href="mariamguizani.html">
+        <link rel="prefetch" href="teaching.html">
     </head>
     
 <body class="page-body page-home">
@@ -43,7 +43,6 @@
                     <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
                     <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
                 </ul>
             </div>
         </div>
@@ -53,15 +52,16 @@
     <!-- Mission Statement Section -->
     <div class="container mt-4">
         <section class="hero-card">
+            <div class="hero-particles-wrap"><canvas id="hero-particles"></canvas></div>
             <div class="hero-grid">
                 <div>
                     <p class="eyebrow">MUSE Lab at Queen's University</p>
-                    <h1 class="mb-3">Human-centred software engineering research.</h1>
+                    <h1 class="mb-3 hero-typing">Human-centred software engineering research.</h1>
                     <p class="hero-lede">
                         The <strong>Moving Intelligent User-Centric Software Engineering (MUSE) Lab</strong> studies how people, tools, and communities shape software systems. The lab combines empirical software engineering, human-computer interaction, and machine learning to improve the sustainability, inclusivity, and productivity of complex socio-technical ecosystems.
                     </p>
                 </div>
-                <aside class="hero-meta-panel" aria-label="Lab profile">
+                <aside class="hero-meta-panel" aria-label="Lab profile" data-parallax="0.06">
                     <dl>
                         <dt>Director</dt>
                         <dd>Dr. Mariam Guizani</dd>
@@ -77,117 +77,249 @@
         </section>
     </div>
 
-    <!-- Research Directions -->
+    <!-- MUSE Lab News -->
     <div class="container section-shell">
+        <div class="section-head">
+            <div>
+                <p class="section-kicker">MUSE Lab</p>
+                <h2 class="section-title mb-0">News</h2>
+            </div>
+        </div>
+        <div class="news-card p-4">
+            <div class="news-scroll">
+                <div class="news-timeline">
+                    <div class="news-item">
+                        <span class="news-badge">May 2026</span>
+                        <p>Our paper <em>"Do Good, Stay Longer?"</em> by Mohamed Ouf, Amr Mohamed, and Mariam Guizani has been accepted at <strong>EASE 2026</strong> (Research Track). We studied how newcomers become core contributors in open source projects focused on social good.</p>
+                        <a href="https://arxiv.org/abs/2601.23142" class="news-link" target="_blank">Read the preprint</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">May 2026</span>
+                        <p>Our paper <em>"Same Project, Different Start"</em> by Mohamed Ouf and Mariam Guizani has also been accepted at <strong>EASE 2026</strong> (Research Track). This work looks at how contribution events like hackathons and mentorships shape long-term activity in open source.</p>
+                        <a href="https://arxiv.org/abs/2604.22120" class="news-link" target="_blank">Read the preprint</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Apr 2026</span>
+                        <p>The MUSE Lab attended <strong>ICSE 2026</strong> in Rio de Janeiro! We presented three papers across the Main Track, NIER, and CHASE.</p>
+                        <img src="photos/icse-2026-lab.jpg" class="news-photo" alt="Yawar Ashraf, Dr. Mariam Guizani, and Aaliyah Chang at ICSE 2026 in Rio de Janeiro">
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Apr 2026</span>
+                        <p>Dr. Guizani and Nathan Cassee organized a fishbowl-style panel at <strong>CHASE 2026</strong> called <em>"The Human Side of Developer Experience"</em>, bringing together researchers for an open discussion on human factors in software engineering.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Mar 2026</span>
+                        <p>Three papers accepted at <strong>ICSE 2026</strong>! Our work on OSS4SG community patterns got into the Main Track, our collaboration on LLM-driven documentation translation into the NIER Track, and Aaliyah Chang's work on motivations in software engineering into CHASE.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Mar 2026</span>
+                        <p>Our <em>Community Tapestry</em> dashboard was presented at <strong>SANER 2026</strong> as part of the Journal First track. This tool helps open source project leaders track diversity and turnover in their communities.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Mar 2026</span>
+                        <p>Dr. Guizani received funding from the <strong>Ontario Research Fund</strong> as part of Ontario's $47M investment in research and innovation, supporting our work on sustainable open source and developer productivity.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Feb 2026</span>
+                        <p>Our systematic review on the impact of LLM assistants on developer productivity by Amr Mohamed, Maram Assi, and Mariam Guizani has been accepted at <strong>TOSEM</strong>.</p>
+                        <a href="https://arxiv.org/abs/2507.03156" class="news-link" target="_blank">Read the preprint</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Nov 2025</span>
+                        <p>Mohamad Ashraf presented our paper on reverse engineering user stories from code using LLMs at <strong>CASCON 2025</strong> in Toronto.</p>
+                        <a href="https://doi.org/10.1109/CASCON66301.2025.00080" class="news-link" target="_blank">Read the paper</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Nov 2025</span>
+                        <p>Michael Zhang presented our work on programming language topic classification at <strong>CASCON 2025</strong> in Toronto.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Sep 2025</span>
+                        <p>The MUSE Lab is welcoming international undergraduate students through the <strong>Mitacs Globalink Research Internship</strong> program for summer 2026.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Jul 2025</span>
+                        <p>Dr. Guizani was voted the favorite 3rd-year professor in Electrical and Computer Engineering at Queen's and received the <strong>Undergraduate Teaching Award</strong>.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Jun 2025</span>
+                        <p>Dr. Guizani received an <strong>NSERC Discovery Grant</strong> to develop actionable diversity and inclusion tools for socio-technically sustainable open source software.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">May 2025</span>
+                        <p>Dr. Guizani served as Media Co-Chair for <strong>CASCON 2025</strong>, the 35th anniversary of the IEEE International Conference on Collaborative Advances in Software and Computing.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Apr 2024</span>
+                        <p>Dr. Guizani received the <strong>Frank Knox Award</strong> for Excellence in Teaching at Queen's University, recognizing her outstanding commitment to students.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Nov 2022</span>
+                        <p>Our research on the Maintainer Dashboard helped inform the <strong>GitHub Discussions Dashboard</strong> and was featured on the GitHub blog. This work came out of Dr. Guizani's internship at Microsoft Research.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-badge">Sep 2021</span>
+                        <p>Dr. Guizani was an invited speaker at the <strong>Open Source Summit 2021</strong> in Seattle, organized by the Linux Foundation, where she presented on developer productivity in open source communities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Directions -->
+    <div class="container section-shell mb-5">
         <div class="section-head">
             <div>
                 <p class="section-kicker">Research Directions</p>
-                <h2 class="section-title mb-0">Questions at the intersection of software, people, and communities.</h2>
+                <h2 class="section-title mb-0">What we’re working on.</h2>
             </div>
-            <p>Each theme reflects a core strand of the lab's research program and anchors future projects, publications, and student work.</p>
         </div>
-        <div class="research-grid">
-            <article class="research-tile">
-                <h3>Empirical Software Engineering</h3>
-                <p>Evidence-driven studies of how software systems are built, maintained, and evolved.</p>
-            </article>
-            <article class="research-tile">
-                <h3>Open-Source Software</h3>
-                <p>Understanding sustainability, participation, governance, and tooling in OSS communities.</p>
-            </article>
-            <article class="research-tile">
-                <h3>Equity, Diversity, and Inclusion</h3>
-                <p>Designing more inclusive pathways for participation in software engineering.</p>
-            </article>
-            <article class="research-tile">
-                <h3>Machine Learning for SE</h3>
-                <p>Studying how data-driven systems can support developers while preserving human judgment.</p>
-            </article>
-            <article class="research-tile">
-                <h3>Developer Productivity</h3>
-                <p>Investigating how developers define, experience, and improve productive work.</p>
-            </article>
-        </div>
-    </div>
+        <div class="rd-grid">
 
-    <div class="container section-shell">
-        <div class="section-head">
-            <div>
-                <p class="section-kicker">Selected Publications</p>
-                <h2 class="section-title mb-0">A preview of the redesigned publication format.</h2>
-            </div>
-            <p>The full publications page now includes example academic cards with venue, authors, type, and action links.</p>
-        </div>
-        <div class="pub-list">
-            <article class="pub-card">
-                <div class="pub-card__meta">
-                    <span class="pub-card__year">2020</span>
-                    <span class="pub-card__type">journal</span>
-                    <span class="pub-card__citations">93 citations</span>
-                    <span class="pub-card__selected">Selected</span>
+            <article class="rd-card" data-rd="oss">
+                <div class="rd-card__front">
+                    <svg class="rd-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    <h3>Open-Source Software</h3>
+                    <p>Sustainability, participation, governance, and tooling in OSS communities.</p>
+                    <span class="rd-card__count">16 papers</span>
                 </div>
-                <h3>Hidden figures: Roles and pathways of successful OSS contributors</h3>
-                <p class="pub-authors">B. Trinkenreich, <strong>Mariam Guizani</strong>, I. Wiese, A. Sarma, I. Steinmacher</p>
-                <p class="pub-venue">Proceedings of the ACM on Human-Computer Interaction, CSCW2</p>
-                <div class="pub-actions">
-                    <a href="publication.html" class="pub-action">View publications</a>
-                    <a href="publication.html" class="pub-action">BibTeX</a>
+                <div class="rd-card__expanded">
+                    <div class="rd-card__people">
+                        <img src="photos/mariamguizani.jpeg" alt="Mariam Guizani" title="Dr. Mariam Guizani">
+                        <img src="photos/mohamedouf.jpeg" alt="Mohamed Ouf" title="Mohamed Ouf">
+                        <img src="photos/eliottrobyn.jpeg" alt="Robyn Elliot" title="Robyn Elliot">
+                        <img src="photos/zephvaniterson.jpg" alt="Zeph Van Iterson" title="Zeph Van Iterson">
+                    </div>
+                    <ul class="rd-card__papers">
+                        <li><a href="https://doi.org/10.1145/3415251">B. Trinkenreich, M. Guizani, et al. <em>Hidden Figures: Roles and Pathways of Successful OSS Contributors.</em> CSCW 2020.</a></li>
+                        <li><a href="https://doi.org/10.1145/3479551">M. Guizani, et al. <em>The Long Road Ahead: Ongoing Challenges in Contributing to Large OSS Organizations.</em> CSCW 2021.</a></li>
+                        <li><a href="https://doi.org/10.1109/ICSE48619.2023.00218">M. Guizani, et al. <em>Rules of Engagement: Why and How Companies Participate in OSS.</em> ICSE 2023.</a></li>
+                    </ul>
+                    <a href="publication.html" class="rd-card__link">View all OSS publications &rarr;</a>
                 </div>
             </article>
-            <article class="pub-card">
-                <div class="pub-card__meta">
-                    <span class="pub-card__year">2021</span>
-                    <span class="pub-card__type">conference</span>
-                    <span class="pub-card__citations">54 citations</span>
-                    <span class="pub-card__selected">Selected</span>
+
+            <article class="rd-card" data-rd="edi">
+                <div class="rd-card__front">
+                    <svg class="rd-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <h3>Equity, Diversity &amp; Inclusion</h3>
+                    <p>Designing more inclusive pathways for participation in software engineering.</p>
+                    <span class="rd-card__count">10 papers</span>
                 </div>
-                <h3>The Long Road Ahead: Ongoing Challenges in Contributing to Large OSS Organizations and What to Do</h3>
-                <p class="pub-authors"><strong>Mariam Guizani</strong>, A. Chatterjee, B. Trinkenreich, M. E. May, G. J. Noa-Guevara, and collaborators</p>
-                <p class="pub-venue">Proceedings of the ACM on Human-Computer Interaction, CSCW2</p>
-                <div class="pub-actions">
-                    <a href="publication.html" class="pub-action">View publications</a>
-                    <a href="publication.html" class="pub-action">BibTeX</a>
+                <div class="rd-card__expanded">
+                    <div class="rd-card__people">
+                        <img src="photos/mariamguizani.jpeg" alt="Mariam Guizani" title="Dr. Mariam Guizani">
+                    </div>
+                    <ul class="rd-card__papers">
+                        <li><a href="https://doi.org/10.1109/MS.2020.3019540">M. Guizani, et al. <em>Gender Inclusivity as a Quality Requirement: Practices and Pitfalls.</em> IEEE Software 2020.</a></li>
+                        <li><a href="https://doi.org/10.1007/978-1-4842-9651-6_27">M. Hamid, A. Chatterjee, M. Guizani, et al. <em>How to Measure Diversity Actionably in Technology.</em> Book Chapter 2024.</a></li>
+                    </ul>
+                    <a href="publication.html" class="rd-card__link">View all EDI publications &rarr;</a>
                 </div>
             </article>
+
+            <article class="rd-card" data-rd="msr">
+                <div class="rd-card__front">
+                    <svg class="rd-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-6"/></svg>
+                    <h3>Mining Software Repos</h3>
+                    <p>Large-scale empirical analysis of software repositories and developer activity.</p>
+                    <span class="rd-card__count">5 papers</span>
+                </div>
+                <div class="rd-card__expanded">
+                    <div class="rd-card__people">
+                        <img src="photos/mariamguizani.jpeg" alt="Mariam Guizani" title="Dr. Mariam Guizani">
+                        <img src="photos/mohamedouf.jpeg" alt="Mohamed Ouf" title="Mohamed Ouf">
+                        <img src="photos/zephvaniterson.jpg" alt="Zeph Van Iterson" title="Zeph Van Iterson">
+                    </div>
+                    <ul class="rd-card__papers">
+                        <li><a href="https://doi.org/10.1145/3744916.3787782">M. Ouf, et al. <em>An Empirical Analysis of Community and Coding Patterns in OSS4SG vs. Conventional OSS.</em> EASE 2026.</a></li>
+                        <li><a href="https://arxiv.org/abs/2604.22120">M. Ouf, M. Guizani. <em>Same Project, Different Start: How Contribution Events Shape Activity and Retention in Open Source.</em> 2026.</a></li>
+                    </ul>
+                    <a href="publication.html" class="rd-card__link">View all MSR publications &rarr;</a>
+                </div>
+            </article>
+
+            <article class="rd-card" data-rd="productivity">
+                <div class="rd-card__front">
+                    <svg class="rd-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <h3>Developer Productivity</h3>
+                    <p>How developers define, experience, and improve productive work.</p>
+                    <span class="rd-card__count">2 papers</span>
+                </div>
+                <div class="rd-card__expanded">
+                    <div class="rd-card__people">
+                        <img src="photos/mariamguizani.jpeg" alt="Mariam Guizani" title="Dr. Mariam Guizani">
+                        <img src="photos/amrmohamed.jpg" alt="Amr Mohamed" title="Amr Mohamed">
+                    </div>
+                    <ul class="rd-card__papers">
+                        <li><a href="https://doi.org/10.1145/3809494">A. Mohamed, M. Assi, M. Guizani. <em>The Impact of LLM-Assistants on Software Developer Productivity.</em> TOSEM 2025.</a></li>
+                        <li><a href="https://arxiv.org/abs/2511.14711">A. Chang, M. Guizani, B. Johnson. <em>Why Do We Code? A Theory on Motivations and Challenges in Software Engineering.</em> 2025.</a></li>
+                    </ul>
+                    <a href="publication.html" class="rd-card__link">View all Productivity publications &rarr;</a>
+                </div>
+            </article>
+
+            <article class="rd-card" data-rd="ml4se">
+                <div class="rd-card__front">
+                    <svg class="rd-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.57 3.25 3.92"/><path d="M12 10v4"/><circle cx="12" cy="18" r="4"/><path d="M8 18h8"/><path d="M12 14v4"/></svg>
+                    <h3>ML for Software Engineering</h3>
+                    <p>Data-driven systems that support developers while preserving human judgment.</p>
+                    <span class="rd-card__count">2 papers</span>
+                </div>
+                <div class="rd-card__expanded">
+                    <div class="rd-card__people">
+                        <img src="photos/mariamguizani.jpeg" alt="Mariam Guizani" title="Dr. Mariam Guizani">
+                        <img src="photos/mohamedouf.jpeg" alt="Mohamed Ouf" title="Mohamed Ouf">
+                        <img src="photos/michaelzhang.jpeg" alt="Michael Zhang" title="Michael Zhang">
+                    </div>
+                    <ul class="rd-card__papers">
+                        <li><a href="https://doi.org/10.1109/CASCON66301.2025.00080">M. Ouf, H. Li, M. Zhang, M. Guizani. <em>Reverse Engineering User Stories from Code using Large Language Models.</em> CASCON 2025.</a></li>
+                        <li>M. Zhang, Y. Tian, M. Guizani. <em>Design, Implementation and Evaluation of a Novel Programming Language Topic Classification Workflow.</em> CASCON 2025.</li>
+                    </ul>
+                    <a href="publication.html" class="rd-card__link">View all ML4SE publications &rarr;</a>
+                </div>
+            </article>
+
         </div>
-    </div>
-
-    <!-- News and Twitter Feed -->
-    <div class="container section-shell mb-5">
-        <div class="row">
-            <!-- News Section -->
-            <div class="col-md-8">
-                <h3 class="section-title">News</h3>
-                <div class="news-card p-4">
-                <div class="news-item">
-                        <span class="news-badge">Apr 2026</span>
-                        <p>MUSE Lab members attended ICSE 2026 in Rio de Janeiro and represented our ongoing work in software engineering research.</p>
-                        <p>From left to right: Yawar Ashraf, Dr. Mariam Guizani, and Aaliyah Chang.</p>
-                        <img src="photos/icse-2026-lab.jpg" class="img-fluid news-photo" alt="MUSE Lab members at ICSE 2026 in Rio de Janeiro">
-                </div>
-                <div class="news-item">
-                        <span class="news-badge">Apr 2024</span>
-                        <p>
-                            Dr. Mariam Guizani received the <a href="https://www.queensu.ca/ctl/awards/internal-awards/institutional-awards#Frank-Knox-Award" target="_blank">Frank Knox Award</a> for Excellence in Teaching.
-                            This award recognizes Queen’s University professors who demonstrate an outstanding commitment to their students through exceptional teaching.
-                        </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <h3 class="section-title">Twitter</h3>
-                <div class="twitter-card">
-                    <a class="twitter-timeline" href="https://twitter.com/mariam_gui?ref_src=twsrc%5Etfw">Tweets by mariam_gui</a> 
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </div>
-            
+        <div id="rd-detail-panel" class="rd-detail" style="display:none;">
+            <button class="rd-detail__close" aria-label="Close">&times;</button>
+            <div class="rd-detail__header"><h3></h3></div>
+            <div class="rd-detail__body"></div>
         </div>
     </div>
     </main>
 
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">MUSE Lab</div>
+                    <p>Moving Intelligent User-Centric Software Engineering Lab at Queen's University, Kingston, Canada.</p>
+                </div>
+                <div>
+                    <div class="footer-brand">Pages</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mariamguizani.html">Dr. Guizani</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="publication.html">Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-brand">Contact</div>
+                    <ul class="footer-links">
+                        <li>mariam.guizani@queensu.ca</li>
+                        <li>Queen's University, Kingston ON</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 MUSE Lab, Queen's University. All rights reserved.</div>
+        </div>
+    </footer>
+
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/fancy.js"></script>
 </body>
 </html>

@@ -1,0 +1,771 @@
+[
+  {
+    "id": "10.1145/3744916.3787782",
+    "title": "An Empirical Analysis of Community and Coding Patterns in OSS4SG vs. Conventional OSS",
+    "authors": [
+      "Mohamed Ouf",
+      "Shayan Noei",
+      "Zeph Van Iterson",
+      "Mariam Guizani",
+      "Ying Zou"
+    ],
+    "venue": "IEEE/ACM 48th International Conference on Software Engineering (ICSE)",
+    "venue_acronym": "ICSE",
+    "year": 2026,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "msr"
+    ],
+    "doi": "10.1145/3744916.3787782",
+    "links": {
+      "doi": "https://doi.org/10.1145/3744916.3787782",
+      "pdf": "https://arxiv.org/abs/2501.12345",
+      "presentation": "https://queensuca-my.sharepoint.com/:p:/g/personal/lq21_queensu_ca/IQCtG8ke4xNISLZAEq60mr00Ae8JvDxLUp65OJbRVilIwI0?e=XuayIW"
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Open Source Software for Social Good (OSS4SG) projects aim to address critical societal challenges, such as healthcare access and community safety. Understanding the community dynamics and contributor patterns in these projects is essential for ensuring their sustainability and long-term impact. However, while extensive research has focused on conventional Open Source Software (OSS), little is known about how the mission-driven nature of OSS4SG influences its development practices. To address this gap, we conduct a large-scale empirical study of 1,039 GitHub repositories, comprising 422 OSS4SG and 617 conventional OSS projects, to compare community structure, contributor engagement, and coding practices. Our findings reveal that OSS4SG projects foster significantly more stable and\"sticky\"(63.4%) communities, whereas conventional OSS projects are more\"magnetic\"(75.4%), attracting a high turnover of contributors. OSS4SG projects also demonstrate consistent engagement throughout the year, while conventional OSS communities exhibit seasonal fluctuations. Additionally, OSS4SG projects rely heavily on core contributors for both code quality and issue resolution, while conventional OSS projects leverage casual contributors for issue resolution, with core contributors focusing primarily on code quality."
+  },
+  {
+    "id": "10.48550/arXiv.2601.23142",
+    "title": "Do Good, Stay Longer? Temporal Patterns and Predictors of Newcomer-to-Core Transitions in Conventional OSS and OSS4SG",
+    "authors": [
+      "Mohamed Ouf",
+      "Amr Mohamed",
+      "Mariam Guizani"
+    ],
+    "venue": "International Conference on Evaluation and Assessment in Software Engineering (EASE)",
+    "venue_acronym": "EASE",
+    "year": 2026,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "msr"
+    ],
+    "doi": "10.48550/arXiv.2601.23142",
+    "links": {
+      "doi": "https://doi.org/10.48550/arXiv.2601.23142",
+      "pdf": "https://arxiv.org/abs/2601.23142",
+      "presentation": "https://queensuca-my.sharepoint.com/:p:/g/personal/lq21_queensu_ca/IQAkmFK7odeeS77YquPJWrx5AfJWacenWD2pKtlmiaMmM-g?e=jso6UB"
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Open Source Software (OSS) sustainability relies on newcomers transitioning to core contributors, but this pipeline is broken, with most newcomers becoming inactive after initial contributions. Open Source Software for Social Good (OSS4SG) projects, which prioritize societal impact as their primary mission, may be associated with different newcomer-to-core transition outcomes than conventional OSS projects. We compared 375 projects (190 OSS4SG, 185 OSS), analyzing 92,721 contributors and 3.5 million commits. OSS4SG projects retain contributors at 2.2X higher rates and contributors have 19.6% higher probability of achieving core status. Early broad project exploration predicts core achievement (22.2% importance); conventional OSS concentrates on one dominant pathway (61.62% of transitions) while OSS4SG provides multiple pathways. Contrary to intuition, contributors who invest time learning the project before intensifying their contributions (Late Spike pattern) achieve core status 2.4-2.9X faster (21 weeks) than those who contribute intensively from day one (Early Spike pattern, 51-60 weeks). OSS4SG supports two effective temporal patterns while only Late Spike achieves fastest time-to-core in conventional OSS. Our findings suggest that finding a project aligned with personal values and taking time to understand the codebase before major contributions are key strategies for achieving core status. Our findings show that project mission is associated with measurably different environments for newcomer-to-core transitions and provide evidence-based guidance for newcomers and maintainers."
+  },
+  {
+    "id": "sameprojectdifferentstart",
+    "title": "Same Project, Different Start: How Contribution Events Shape Activity and Retention in Open Source",
+    "authors": [
+      "Mohamed Ouf",
+      "Mariam Guizani"
+    ],
+    "venue": "International Conference on Evaluation and Assessment in Software Engineering (EASE)",
+    "venue_acronym": "EASE",
+    "year": 2026,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "msr"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "https://arxiv.org/abs/2604.22120",
+      "presentation": "https://queensuca-my.sharepoint.com/:p:/g/personal/lq21_queensu_ca/IQB8kfb67UC2SoDRgJqVQ6eDAbs54YyZKa6EZ0Ny7cjAgxA?e=oKkQwv"
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10"
+  },
+  {
+    "id": "10.1016/j.infsof.2025.107871",
+    "title": "Community Tapestry: An Actionable Tool to Track Turnover and Diversity in OSS",
+    "authors": [
+      "Mariam Guizani",
+      "Zixuan Feng",
+      "E. J. Garcia",
+      "Katie Kimura",
+      "D. Mueller",
+      "Luis Ca\u00f1as-D\u00edaz",
+      "Alexander Serebrenik",
+      "Anita Sarma"
+    ],
+    "venue": "Information and Software Technology",
+    "venue_acronym": "IST",
+    "year": 2025,
+    "type": "journal",
+    "topics": [
+      "oss",
+      "edi",
+      "tools"
+    ],
+    "doi": "10.1016/j.infsof.2025.107871",
+    "links": {
+      "doi": "https://doi.org/10.1016/j.infsof.2025.107871",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Managing open-source software (OSS) projects requires managing communities of contributors. In particular, it is essential for project leaders to understand their community's diversity and turnover. We present CommunityTapestry, a dynamic real-time community dashboard, which presents key diversity and turnover signals that we identified from the literature and through participatory design sessions with stakeholders. We evaluated CommunityTapestry with an OSS project's contributors and Project Management Committee members, who explored the dashboard using their own project data. Our study results demonstrate that CommunityTapestry increased participants' awareness of their community composition and the diversity and turnover rates in the project. It helped them identify areas of improvement and gave them actionable information."
+  },
+  {
+    "id": "fromcommitstoconfidence",
+    "title": "From Commits to Confidence: Towards Stability-Informed Risk Assessment in Open Source Software",
+    "authors": [
+      "Elijah Kayode Adejumo",
+      "Mariam Guizani",
+      "Brittany Johnson"
+    ],
+    "venue": "International Conference on Software Engineering (ICSE-NIER)",
+    "venue_acronym": "ICSE",
+    "year": 2025,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "msr"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "https://arxiv.org/abs/2508.02487",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Open source software (OSS) generates trillions of dollars in economic value and has become essential to the technical infrastructures that power organizations worldwide. As these systems increasingly depend on OSS, understanding the evolution of these projects is critical. While existing metrics provide insights into project health, one dimension remains understudied: project resilience, or the ability to return to normal operations after disturbances such as contributor departures,security vulnerabilities and bug report spikes. We hypothesize that stable commit patterns may serve as an indicator of underlying project characteristics such as mature governance, sustained contributors, and robust development processes, factors that existing research associates with resilience. Our findings reveal that only 2% of repositories exhibit daily stability, 29% achieve weekly stability, and 50\\% demonstrate monthly stability, while the remaining half are unstable across all levels of granularity. Analysis of the 50 unstable repositories indicate that 86% of activity is concentrated among a few maintainers, with the top 3 contributors accounting for over 50% of commits in the past 5 years. In contrast, the 50 stable repositories distribute work more evenly, with the top 3 contributors representing less than 50% of commits. Our insights thus far indicate the fragile and multi-dimensional nature of OSS project stability, suggesting a need to go beyond commits to understand how our understanding of stability can be enriched with other considerations such as community engagement metrics and issue or pull request churn. Though our efforts only identified two repositories that achieved stability at all three temporal commit granularities, further investigation into their processes and policies can provide insights and foundations for stability-informed risk assessment in practice."
+  },
+  {
+    "id": "10.1109/CASCON66301.2025.00080",
+    "title": "Reverse Engineering User Stories from Code using Large Language Models",
+    "authors": [
+      "Mohamed Ouf",
+      "Haoyu Li",
+      "Michael Zhang",
+      "Mariam Guizani"
+    ],
+    "venue": "Conference of the Centre for Advanced Studies on Collaborative Research (CASCON)",
+    "venue_acronym": "CASCON",
+    "year": 2025,
+    "type": "conference",
+    "topics": [
+      "ml4se"
+    ],
+    "doi": "10.1109/CASCON66301.2025.00080",
+    "links": {
+      "doi": "https://doi.org/10.1109/CASCON66301.2025.00080",
+      "pdf": "https://arxiv.org/abs/2509.19587",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "User stories are essential in agile development, yet often missing or outdated in legacy and poorly documented systems. We investigate whether large language models (LLMs) can automatically recover user stories directly from source code and how prompt design impacts output quality. Using 1,750 annotated C++ snippets of varying complexity, we evaluate five state-of-the-art LLMs across six prompting strategies. Results show that all models achieve, on average, an F1 score of 0.8 for code up to 200 NLOC. Our findings show that a single illustrative example enables the smallest model (8B) to match the performance of a much larger 70B model. In contrast, structured reasoning via Chain-of-Thought offers only marginal gains, primarily for larger models."
+  },
+  {
+    "id": "10.1145/3809494",
+    "title": "The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Review and Mapping Study",
+    "authors": [
+      "Amr Mohamed",
+      "Maram Assi",
+      "Mariam Guizani"
+    ],
+    "venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+    "venue_acronym": "TOSEM",
+    "year": 2025,
+    "type": "journal",
+    "topics": [
+      "productivity",
+      "ese"
+    ],
+    "doi": "10.1145/3809494",
+    "links": {
+      "doi": "https://doi.org/10.1145/3809494",
+      "pdf": "https://arxiv.org/abs/2507.03156",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Large language model assistants (LLM-assistants) present new opportunities to transform software development. Developers are increasingly adopting these tools across tasks, including coding, testing, debugging, documentation, and design. Yet, despite growing interest, there is no synthesis of how LLM-assistants affect software developer productivity. In this paper, we present a systematic review and mapping of 39 peer-reviewed studies published between January 2014 and December 2024 that examine this impact. Our analysis reveals that the majority of studies report considerable benefits from LLM-assistants, though a notable subset identifies critical risks. Commonly reported gains include accelerated development, minimized code search, and the automation of trivial and repetitive tasks. However, studies also highlight concerns around cognitive offloading and reduced team collaboration. Our study reveals that whether LLM-based assistants improve or degrade code quality remains unresolved, as existing studies report contradictory outcomes contingent on context and evaluation criteria. While the majority of studies (90%) adopt a multi-dimensional perspective by examining at least two SPACE dimensions, reflecting increased awareness of the complexity of developer productivity, only 15% extend beyond three dimensions, indicating substantial room for more integrated evaluations. Satisfaction, Performance, and Efficiency are the most frequently investigated dimensions, whereas Communication and Activity remain underexplored. Most studies are exploratory (59%) and methodologically diverse, but lack longitudinal and team-based evaluations. This review surfaces key research gaps and provides recommendations for future research and practice. All artifacts associated with this study are publicly available at https://zenodo.org/records/18489222."
+  },
+  {
+    "id": "towardsbridginglanguagegaps",
+    "title": "Towards Bridging Language Gaps in OSS with LLM-Driven Documentation Translation",
+    "authors": [
+      "Elijah Kayode Adejumo",
+      "Mariam Guizani",
+      "Fatemeh Vares",
+      "Brittany Johnson"
+    ],
+    "venue": "International Conference on Software Engineering (ICSE-NIER)",
+    "venue_acronym": "ICSE",
+    "year": 2025,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "edi"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "https://arxiv.org/abs/2508.02497",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "While open source communities attract diverse contributors across the globe, only a few open source software repositories provide essential documentation, such as ReadMe or CONTRIBUTING files, in languages other than English. Recently, large language models (LLMs) have demonstrated remarkable capabilities in a variety of software engineering tasks. We have also seen advances in the use of LLMs for translations in other domains and contexts. Despite this progress, little is known regarding the capabilities of LLMs in translating open-source technical documentation, which is often a mixture of natural language, code, URLs, and markdown formatting. To better understand the need and potential for LLMs to support translation of technical documentation in open source, we conducted an empirical evaluation of translation activity and translation capabilities of two powerful large language models (OpenAI ChatGPT 4 and Anthropic Claude). We found that translation activity is often community-driven and most frequent in larger repositories. A comparison of LLM performance as translators and evaluators of technical documentation suggests LLMs can provide accurate semantic translations but may struggle preserving structure and technical content. These findings highlight both the promise and the challenges of LLM-assisted documentation internationalization and provide a foundation towards automated LLM-driven support for creating and maintaining open source documentation."
+  },
+  {
+    "id": "10.48550/arXiv.2511.14711",
+    "title": "Why Do We Code? A Theory on Motivations and Challenges in Software Engineering from Education to Practice",
+    "authors": [
+      "Aaliyah Chang",
+      "Mariam Guizani",
+      "Brittany Johnson"
+    ],
+    "venue": "International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE @ ICSE)",
+    "venue_acronym": "CHASE",
+    "year": 2026,
+    "type": "conference",
+    "topics": [
+      "productivity",
+      "ese"
+    ],
+    "doi": "10.48550/arXiv.2511.14711",
+    "links": {
+      "doi": "https://doi.org/10.48550/arXiv.2511.14711",
+      "pdf": "https://arxiv.org/abs/2511.14711",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Motivations and challenges jointly shape how individuals enter, persist, and evolve within software engineering (SE), yet their interplay remains underexplored across the transition from education to professional practice. We conducted 15 semi-structured interviews and employed the Gioia Methodology, an adapted grounded theory methodology from organizational behavior, to inductively derive taxonomies of motivations and challenges, and build the Exposure-Pursuit-Evaluation (EPE) Process Model. Our findings reveal that impactful early exposure triggers intrinsic motivations, while non-impactful exposure requires an extrinsic push (e.g., career/ personal goals, external validation). We identify curiosity and avoiding alternatives as a distinct educational drivers, and barriers to belonging as the only challenge persisting across education and career. Our findings show that career progression challenges (e.g., navigating the corporate world) constrain extrinsic fulfillment while technical training challenges, barriers to belonging and threats to motivation constrain intrinsic fulfillment. The theory shows how unmet motivations and recurring challenges influence persistence, career shifts, or departure from the field. Our results provide a grounded model for designing interventions that strengthen intrinsic fulfillment and reduce systemic barriers in SE education and practice."
+  },
+  {
+    "id": "designimplementationevaluation",
+    "title": "Design, Implementation and Evaluation of a Novel Programming Language Topic Classification Workflow",
+    "authors": [
+      "Michael Zhang",
+      "Yilong Tian",
+      "Mariam Guizani"
+    ],
+    "venue": "Conference of the Centre for Advanced Studies on Collaborative Research (CASCON)",
+    "venue_acronym": "CASCON",
+    "year": 2025,
+    "type": "conference",
+    "topics": [
+      "ml4se"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "manual",
+    "added_on": "2026-05-11"
+  },
+  {
+    "id": "10.1007/978-1-4842-9651-6_27",
+    "title": "How to Measure Diversity Actionably in Technology",
+    "authors": [
+      "Md Montaser Hamid",
+      "Amreeta Chatterjee",
+      "Mariam Guizani",
+      "Andrew Anderson",
+      "Fatima A. Moussaoui",
+      "Sarah Yang",
+      "Isaac Tijerina Escobar",
+      "Anita Sarma",
+      "Margaret Burnett"
+    ],
+    "venue": "Equity, Diversity, and Inclusion in Software Engineering",
+    "venue_acronym": "",
+    "year": 2024,
+    "type": "book-chapter",
+    "topics": [
+      "edi"
+    ],
+    "doi": "10.1007/978-1-4842-9651-6_27",
+    "links": {
+      "doi": "https://doi.org/10.1007/978-1-4842-9651-6_27",
+      "pdf": "https://doi.org/10.1007/978-1-4842-9651-6_27",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "How do you measure technology\u2019s support for diverse populations in a way that is actionable, and can lead to more inclusive designs of the technology? This chapter presents a method and the validated GenderMag survey that powers the method. The survey measures diversity gaps in technology in a fine-grained way, and the method shows how to use it to translate an empirical study's findings into actionable design directions."
+  },
+  {
+    "id": "comparingdeveloperattraction",
+    "title": "Comparing Developer Attraction and Turnover in OSS vs. OSS4SG Projects: An MSR Study",
+    "authors": [
+      "Zeph Van Iterson"
+    ],
+    "venue": "Inquiry@Queen's Undergraduate Research Conference Proceedings",
+    "venue_acronym": "",
+    "year": 2024,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "msr"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "manual",
+    "added_on": "2026-05-11"
+  },
+  {
+    "id": "10.1109/ICSE48619.2023.00218",
+    "title": "Rules of Engagement: Why and How Companies Participate in OSS",
+    "authors": [
+      "Mariam Guizani",
+      "Aileen Abril Castro-Guzman",
+      "Anita Sarma",
+      "Igor Steinmacher"
+    ],
+    "venue": "IEEE/ACM 45th International Conference on Software Engineering (ICSE)",
+    "venue_acronym": "ICSE",
+    "year": 2023,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "ese"
+    ],
+    "doi": "10.1109/ICSE48619.2023.00218",
+    "links": {
+      "doi": "https://doi.org/10.1109/ICSE48619.2023.00218",
+      "pdf": "https://arxiv.org/pdf/2303.08266",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Company engagement in open source (OSS) is now the new norm. From large technology companies to startups, companies are participating in the OSS ecosystem by open-sourcing their technology, sponsoring projects through funding or paid developer time. However, our understanding of the OSS ecosystem is rooted in the \u201cold world\u201d model where individual contributors sustain OSS projects. In this work, we create a more comprehensive understanding of the hybrid OSS landscape by investigating what motivates companies to contribute and how they contribute to OSS. We conducted interviews with 20 participants who have different roles (e.g., CEO, OSPO Lead, Ecosystem Strategist) at 17 different companies of different sizes from large companies (e.g. Microsoft, RedHat, Google, Spotify) to startups. Data from semi-structured interviews reveal that company motivations can be categorized into four levels (Founders' Vision, Reputation, Business Advantage, and Reciprocity) and companies participate through different mechanisms (e.g., Developers' Time, Mentoring Time, Advocacy & Promotion Time), each of which tie to the different types of motivations. We hope our findings nudge more companies to participate in the OSS ecosystem, helping make it robust, diverse, and sustainable."
+  },
+  {
+    "id": "10.1109/CHASE58964.2023.00024",
+    "title": "The State of Diversity and Inclusion in Apache: A Pulse Check",
+    "authors": [
+      "Zixuan Feng",
+      "Mariam Guizani",
+      "Marco Aurelio Gerosa",
+      "Anita Sarma"
+    ],
+    "venue": "IEEE/ACM International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
+    "venue_acronym": "CHASE",
+    "year": 2023,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "edi"
+    ],
+    "doi": "10.1109/CHASE58964.2023.00024",
+    "links": {
+      "doi": "https://doi.org/10.1109/CHASE58964.2023.00024",
+      "pdf": "https://arxiv.org/pdf/2303.16344",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Diversity and inclusion (D&I) in open source software (OSS) is a multifaceted concept that arises from differences in contributors\u2019 gender, seniority, language, region, and other characteristics. D&I has received growing attention in OSS ecosystems and projects, and various programs have been implemented to foster contributor diversity. However, we do not yet know how the state of D&I is evolving. By understanding the state of D&I in OSS projects, the community can develop new and adjust current strategies to foster diversity among contributors and gain insights into the mechanisms and processes that facilitate the development of inclusive communities. In this paper, we report and compare the results of two surveys of Apache Software Foundation (ASF) contributors conducted over two years (n=624 & n=432), considering a variety of D&I aspects. We see improvements in engagement among those traditionally underrepresented in OSS, particularly those who are in gender minority or not confident in English. Yet, the gender gap in the number of contributors remains. We expect this study to help communities tailor their efforts in promoting D&I in OSS."
+  },
+  {
+    "id": "10.48550/arXiv.2312.08543",
+    "title": "Unveiling Diversity: Empowering OSS Project Leaders with Community Diversity and Turnover Dashboards",
+    "authors": [
+      "Mariam Guizani",
+      "Zixuan Feng",
+      "Emily Arteaga",
+      "Luis Ca\u00f1as-D\u00edaz",
+      "Alexander Serebrenik",
+      "Anita Sarma"
+    ],
+    "venue": "arXiv preprint",
+    "venue_acronym": "arXiv",
+    "year": 2023,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "edi",
+      "tools"
+    ],
+    "doi": "10.48550/arXiv.2312.08543",
+    "links": {
+      "doi": "https://doi.org/10.48550/arXiv.2312.08543",
+      "pdf": "https://arxiv.org/abs/2312.08543",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Managing open-source software (OSS) projects requires managing communities of contributors. In particular, it is essential for project leaders to understand their community's diversity and turnover. We present CommunityTapestry, a dynamic real-time community dashboard, which presents key diversity and turnover signals that we identified from the literature and through participatory design sessions with stakeholders. We evaluated CommunityTapestry with an OSS project's contributors and Project Management Committee members, who explored the dashboard using their own project data. Our study results demonstrate that CommunityTapestry increased participants' awareness of their community composition and the diversity and turnover rates in the project. It helped them identify areas of improvement and gave them actionable information."
+  },
+  {
+    "id": "adecadeofinformationarchitecture",
+    "title": "A Decade of Information Architecture in HCI: A Systematic Literature Review",
+    "authors": [
+      "Mariam Guizani"
+    ],
+    "venue": "arXiv preprint",
+    "venue_acronym": "arXiv",
+    "year": 2022,
+    "type": "conference",
+    "topics": [
+      "ese"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "https://arxiv.org/abs/2202.13412",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10"
+  },
+  {
+    "id": "10.1145/3510458.3513020",
+    "title": "Attracting and Retaining OSS Contributors with a Maintainer Dashboard",
+    "authors": [
+      "Mariam Guizani",
+      "Thomas Zimmermann",
+      "Anita Sarma",
+      "Denae Ford"
+    ],
+    "venue": "IEEE/ACM 44th International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS)",
+    "venue_acronym": "ICSE",
+    "year": 2022,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "tools"
+    ],
+    "doi": "10.1145/3510458.3513020",
+    "links": {
+      "doi": "https://doi.org/10.1145/3510458.3513020",
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513020",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Tools and artifacts produced by open source software (OSS) have been woven into the foundation of the technology industry. To keep this foundation intact, the open source community needs to actively invest in sustainable approaches to bring in new contributors and nurture existing ones. We take a first step at this by collaboratively designing a maintainer dashboard that provides recommendations on how to attract and retain open source contributors. For example, by highlighting project goals (e.g., a social good cause) to attract diverse contributors and mechanisms to acknowledge (e.g., a \u201crising contributor\u201d badge) existing contributors. Next, we conduct a project-specific evaluation with maintainers to better understand use cases in which this tool will be most helpful at supporting their plans for growth. From analyzing feedback, we find recommendations to be useful at signaling projects as welcoming and providing gentle nudges for maintainers to proactively recognize emerging contributors. However, there are complexities to consider when designing recommendations such as the project current development state (e.g., deadlines, milestones, refactoring) and governance model. Finally, we distill our findings to share what the future of recommendations in open source looks like and how to make these recommendations most meaningful over time. LAY ABSTRACT Open Source Software (OSS) plays an important role in the development and maintenance of software products that are widely deployed in different domains from computer science to astrophysics and cut-ting edge medicines research. Chances are there is an open source project for anyone to contribute to. With the recent deployment of the popular Linux open source project on Mars even the sky is no limit. However, OSS projects largely depend on volunteers and attracting, retaining, and keeping contributors engaged is a severe challenge. In this paper, we present the design and evaluation of a dashboard to support community managers, such as maintainers, to track and acknowledge newcomers\u2018 contributions. With the support of tools such as ours, maintainers will be better prepared to attract and retain their emerging community."
+  },
+  {
+    "id": "10.1145/3510458.3513009",
+    "title": "How to Debug Inclusivity Bugs? A Debugging Process with Information Architecture",
+    "authors": [
+      "Mariam Guizani",
+      "Igor Steinmacher",
+      "Jillian Emard",
+      "Abrar Fallatah",
+      "Margaret Burnett",
+      "Anita Sarma"
+    ],
+    "venue": "IEEE/ACM 44th International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS)",
+    "venue_acronym": "ICSE",
+    "year": 2022,
+    "type": "conference",
+    "topics": [
+      "edi",
+      "tools"
+    ],
+    "doi": "10.1145/3510458.3513009",
+    "links": {
+      "doi": "https://doi.org/10.1145/3510458.3513009",
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513009",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Although some previous research has found ways to find inclusivity bugs (biases in software that introduce inequities), little attention has been paid to how to go about fixing such bugs. Without a process to move from finding to fixing, acting upon such findings is an ad-hoc activity, at the mercy of the skills of each individual developer. To address this gap, we created Why/Where/Fix, a systematic inclusivity debugging process whose inclusivity fault localization harnesses Information Architecture(IA)-the way user-facing information is organized, structured and labeled. We then conducted a multi-stage qualitative empirical evaluation of the effectiveness of Why/Where/Fix, using an Open Source Software (OSS) project's infrastructure as our setting. In our study, the OSS project team used the Why/Where/Fix process to find inclusivity bugs, localize the IA faults behind them, and then fix the IA to remove the inclusivity bugs they had found. Our results showed that using Why/Where/Fix reduced the number of inclusivity bugs that OSS newcomer participants experienced by 90%. Diverse teams have been shown to be more productive as well as more innovative. One form of diversity, cognitive diversity - differences in cognitive styles - helps generate diversity of thoughts. However, cognitive diversity is often not supported in software tools. This means that these tools are not inclusive of individuals with different cognitive styles (e.g., those who like to learn through process vs. those who learn by tinkering), which burdens these individuals with a cognitive \u201ctax\u201d each time they use the tool. In this work, we present an approach that enables software developers to: (1) evaluate their tools, especially those that are information-heavy, to find \u201cinclusivity bugs\u201d- cases where diverse cognitive styles are unsupported, (2) find where in the tool these bugs lurk, and (3) fix these bugs. Our evaluation in an open source project shows that by following this approach developers were able to reduce inclusivity bugs in their projects by 90%."
+  },
+  {
+    "id": "10.1145/3510458.3513008",
+    "title": "Perceptions of the State of D&I and D&I Initiative in the ASF",
+    "authors": [
+      "Mariam Guizani",
+      "Bianca Trinkenreich",
+      "Aileen Abril Castro-Guzman",
+      "Igor Steinmacher",
+      "Marco Aurelio Gerosa",
+      "Anita Sarma"
+    ],
+    "venue": "IEEE/ACM 44th International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS)",
+    "venue_acronym": "ICSE",
+    "year": 2022,
+    "type": "conference",
+    "topics": [
+      "oss",
+      "edi"
+    ],
+    "doi": "10.1145/3510458.3513008",
+    "links": {
+      "doi": "https://doi.org/10.1145/3510458.3513008",
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513008",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Open Source Software (OSS) Foundations and projects are investing in creating Diversity and Inclusion (D&I) initiatives. However, little is known about contributors\u2018 perceptions about the usefulness and success of such initiatives. We aim to close this gap by investigating how contributors perceive the state of D&I in their community. In collaboration with the Apache Software Foundation (ASF), we surveyed 600+ OSS contributors and conducted 11 follow-up interviews. We used mixed methods to analyze our data-quantitative analysis of Likert-scale questions and qualitative analysis of open-ended survey question and the interviews to understand contributors\u2018 perceptions and critiques of the D&I initiative and how to improve it. Our results indicate that the ASF contributors felt that the state of D&I was still lacking, especially regarding gender, seniority, and English proficiency. Regarding the D&I initiative, some participants felt that the effort was unnecessary, while others agreed with the effort but critiqued its implementation. These findings show that D&I initiatives in OSS communities are a good start, but there is room for improvements. Our results can inspire the creation of new and the refinement of current initiatives. Open Source Software (OSS) is widely used in society (e.g., Linux, Chrome, and Firefox), and contributing to these projects helps individuals learn and showcase their skills, so much so that the history of contributions are increasingly being analyzed by hirers. However, the people who contribute to OSS are predominately men (about 90%). This means that women and other minorities lose out on job opportunities and OSS projects lose out on diversity of thought. OSS organizations such as the Apache Software Foundation (ASF) promote a variety of initiatives to increase diversity and inclusion (D&I) in their projects, but they are piece-meal and little is known about contributors\u2018 perceptions about the usefulness and success of these initiatives. Here, we surveyed and interviewed ASF contributors to understand their perceptions about the state of D&I in the ASF and the effectiveness of existing D&I initiatives. Our findings show that individuals who are in the minority face chal-lenges (e.g., stereotyping, lack of peer-network, and representation in decision making) and contributors\u2018 perceptions of the D&I initiative are a mixed bag, ranging from commending the current efforts to considering them to be \u201clip service\u201d. These findings suggest that current D&I initiatives in OSS communities are a good start, but much needs be done in terms of creating new successful initiatives and refining current ones."
+  },
+  {
+    "id": "10.1109/ICSE43902.2021.00128",
+    "title": "AID: An Automated Detector for Gender-Inclusivity Bugs in OSS Project Pages",
+    "authors": [
+      "Amreeta Chatterjee",
+      "Mariam Guizani",
+      "Catherine Stevens",
+      "Jillian Emard",
+      "Mary Evelyn May",
+      "Margaret Burnett",
+      "Iftekhar Ahmed",
+      "Anita Sarma"
+    ],
+    "venue": "IEEE/ACM 43rd International Conference on Software Engineering (ICSE)",
+    "venue_acronym": "ICSE",
+    "year": 2021,
+    "type": "conference",
+    "topics": [
+      "edi",
+      "tools"
+    ],
+    "doi": "10.1109/ICSE43902.2021.00128",
+    "links": {
+      "doi": "https://doi.org/10.1109/ICSE43902.2021.00128",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "The tools and infrastructure used in tech, including Open Source Software (OSS), can embed \"inclusivity bugs\"- features that disproportionately disadvantage particular groups of contributors. To see whether OSS developers have existing practices to ward off such bugs, we surveyed 266 OSS developers. Our results show that a majority (77%) of developers do not use any inclusivity practices, and 92% of respondents cited a lack of concrete resources to enable them to do so. To help fill this gap, this paper introduces AID, a tool that automates the GenderMag method to systematically find gender-inclusivity bugs in software. We then present the results of the tool's evaluation on 20 GitHub projects. The tool achieved precision of 0.69, recall of 0.92, an F-measure of 0.79 and even captured some inclusivity bugs that human GenderMag teams missed."
+  },
+  {
+    "id": "10.1186/s13174-021-00140-z",
+    "title": "Being a Mentor in Open Source Projects",
+    "authors": [
+      "Igor Steinmacher",
+      "Sogol Balali",
+      "Bianca Trinkenreich",
+      "Mariam Guizani",
+      "Daniel Izquierdo-Cortazar",
+      "Griselda G. Cuevas Zambrano",
+      "Marco Aurelio Gerosa",
+      "Anita Sarma"
+    ],
+    "venue": "Journal of Internet Services and Applications",
+    "venue_acronym": "JISA",
+    "year": 2021,
+    "type": "journal",
+    "topics": [
+      "oss"
+    ],
+    "doi": "10.1186/s13174-021-00140-z",
+    "links": {
+      "doi": "https://doi.org/10.1186/s13174-021-00140-z",
+      "pdf": "https://jisajournal.springeropen.com/track/pdf/10.1186/s13174-021-00140-z",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Mentoring is a well-known way to help newcomers to Open Source Software (OSS) projects overcome initial contribution barriers. Through mentoring, newcomers learn to acquire essential technical, social, and organizational skills. Despite the importance of OSS mentors, they are understudied in the literature. Understanding who OSS project mentors are, the challenges they face, and the strategies they use can help OSS projects better support mentors\u2019 work. In this paper, we employ a two-stage study to comprehensively investigate mentors in OSS. First, we identify the characteristics of mentors in the Apache Software Foundation, a large OSS community, using an online survey. We found that less experienced volunteer contributors are less likely to take on the mentorship role. Second, through interviews with OSS mentors (n=18), we identify the challenges that mentors face and how they mitigate them. In total, we identified 25 general mentorship challenges and 7 sub-categories of challenges regarding task recommendation. We also identified 13 strategies to overcome the challenges related to task recommendation. Our results provide insights for OSS communities, formal mentorship programs, and tool builders who design automated support for task assignment and internship."
+  },
+  {
+    "id": "10.1029/2020WR028013",
+    "title": "Exploration and Visualization of Patterns Underlying Multistakeholder Preferences in Watershed Conservation Decisions Generated by an Interactive Genetic Algorithm",
+    "authors": [
+      "Andrea Piemonti",
+      "Mariam Guizani",
+      "Meghna Babbar-Sebens",
+      "Eugene Zhang",
+      "Sudarshan Mukhopadhyay"
+    ],
+    "venue": "Water Resources Research",
+    "venue_acronym": "WRR",
+    "year": 2021,
+    "type": "journal",
+    "topics": [
+      "ese"
+    ],
+    "doi": "10.1029/2020WR028013",
+    "links": {
+      "doi": "https://doi.org/10.1029/2020WR028013",
+      "pdf": "https://repository.library.noaa.gov/view/noaa/49814/noaa_49814_DS1.pdf",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "In multiple watershed planning and design problems, such as conservation planning, quantitative estimates of costs, and environmental benefits of proposed conservation decisions may not be the only criteria that influence stakeholders' preferences for those decisions. Their preferences may also be influenced by the conservation decision itself\u2014specifically, the type of practice, where it is being proposed, existing biases, and previous experiences with the practice. While human\u2010in\u2010the\u2010loop type search techniques, such as Interactive Genetic Algorithms (IGA), provide opportunities for stakeholders to incorporate their preferences in the design of alternatives, examination of user\u2010preferred conservation design alternatives for patterns in Decision Space can provide insights into which local decisions have higher or lower agreement among stakeholders. In this paper, we explore and compare spatial patterns in conservation decisions (specifically involving cover crops and filter strips) within design alternatives generated by IGA and noninteractive GA. Methods for comparing patterns include nonvisual as well as visualization approaches, including a novel visual analytics technique. Results for the study site show that user\u2010preferred designs generated by all participants had strong bias for cover crops in a majority (50%\u201383%) of the subbasins. Further, exploration with heat maps visualization indicate that IGA\u2010based search yielded very different spatial patterns of user\u2010preferred decisions in subbasins in comparison to decisions within design alternatives that were generated without the human\u2010in\u2010the\u2010loop. Finally, the proposed coincident\u2010nodes, multiedge graph visualization was helpful in visualizing disagreement among participants in local subbasin scale decisions, and for visualizing spatial patterns in local subbasin scale costs and benefits."
+  },
+  {
+    "id": "10.1109/TSE.2021.3108032",
+    "title": "Pots of Gold at the End of the Rainbow: What is Success for Open Source Contributors?",
+    "authors": [
+      "Bianca Trinkenreich",
+      "Mariam Guizani",
+      "Igor Wiese",
+      "Tayana Conte",
+      "Marco Aurelio Gerosa",
+      "Anita Sarma",
+      "Igor Steinmacher"
+    ],
+    "venue": "IEEE Transactions on Software Engineering",
+    "venue_acronym": "TSE",
+    "year": 2021,
+    "type": "journal",
+    "topics": [
+      "oss",
+      "ese"
+    ],
+    "doi": "10.1109/TSE.2021.3108032",
+    "links": {
+      "doi": "https://doi.org/10.1109/TSE.2021.3108032",
+      "pdf": "https://doi.org/10.1109/tse.2021.3108032",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Success in Open Source Software (OSS) is often perceived as an exclusively code-centric endeavor. This perception can exclude a variety of individuals with a diverse set of skills and backgrounds, in turn helping exacerbate the current diversity & inclusion imbalance in OSS. Because one's perspective of success can affect one's personal, professional, and life choices, to support a diverse class of individuals we must first understand how OSS contributors understand success. Thus far, research has used a uni-dimensional, code-centric lens to define success. In this paper, we challenge this status quo to reveal OSS contributors\u2019 multifaceted definitions of success. We do so through interviews with 27 OSS contributors whose communities recognize them as successful, and a follow-up open survey with 193 OSS contributors. Our study provides nuanced definitions of success perceptions in OSS, which might help devise strategies to attract and retain a diverse set of contributors, helping them attain their unique \u201cpot of gold at the end of the rainbow\u201d."
+  },
+  {
+    "id": "10.1145/3479551",
+    "title": "The Long Road Ahead: Ongoing Challenges in Contributing to Large OSS Organizations and What to Do",
+    "authors": [
+      "Mariam Guizani",
+      "Amreeta Chatterjee",
+      "Bianca Trinkenreich",
+      "Mary Evelyn May",
+      "Geraldine J. Noa-Guevara",
+      "Liam James Russell",
+      "Griselda G. Cuevas Zambrano",
+      "Daniel Izquierdo-Cortazar",
+      "Igor Steinmacher",
+      "Marco Aurelio Gerosa",
+      "Anita Sarma"
+    ],
+    "venue": "Proceedings of the ACM on Human-Computer Interaction (CSCW)",
+    "venue_acronym": "CSCW",
+    "year": 2021,
+    "type": "journal",
+    "topics": [
+      "oss",
+      "ese"
+    ],
+    "doi": "10.1145/3479551",
+    "links": {
+      "doi": "https://doi.org/10.1145/3479551",
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3479551",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Open source communities hosted in large foundations operate in a complex socio-technical ecosystem, which includes a heterogeneous mix of projects and stakeholders. Previous work has thus far investigated the challenges faced in OSS communities from the point of view of specific stakeholders, primarily at the level of individual projects. None have yet studied the challenges faced within a large, federated open source organization. In this paper, we aim to bridge this gap to identify ongoing challenges contributors face in a mature OSS organization. To do so, we surveyed 624 contributors at the Apache Software Foundation (ASF) and ran 11 semi-structured follow up interviews. We validated our findings through member checking with the interviewees as well as the ASF Diversity and Inclusion (D&I) committee. The contributions of this paper include: (1) an empirically-evidenced conceptual model of the 88 challenges that contributors face in a mature OSS foundation and (2) a set of 48 community-recommended strategies for alleviating these challenges. Our results show that even well-established and mature organizations still face a variety of individual and project-specific challenges and that it is difficult to design a comprehensive set of processes and guidelines to match the needs and expectations of a diverse and large federated community. Our conceptual challenges model and associated strategies to mitigate them can provide guidance to other OSS foundations and projects helping them in building better support processes and tools to create a successful, thriving community of contributors."
+  },
+  {
+    "id": "10.1109/MS.2020.3019540",
+    "title": "Gender Inclusivity as a Quality Requirement: Practices and Pitfalls",
+    "authors": [
+      "Mariam Guizani",
+      "Lara Letaw",
+      "Margaret Burnett",
+      "Anita Sarma"
+    ],
+    "venue": "IEEE Software",
+    "venue_acronym": "IEEE-SW",
+    "year": 2020,
+    "type": "journal",
+    "topics": [
+      "edi"
+    ],
+    "doi": "10.1109/MS.2020.3019540",
+    "links": {
+      "doi": "https://doi.org/10.1109/MS.2020.3019540",
+      "pdf": "https://doi.org/10.1109/ms.2020.3019540",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Gender inclusivity in software is gaining attention from researchers and practitioners, with some seeing it as a nonfunctional requirement. To investigate how gender inclusivity can be incorporated into creating software, we gathered data during periods ranging from 5 months to 3.5 years from 10 software teams that used the Gender Inclusiveness Magnifier (GenderMag) to achieve the gender inclusivity quality attribute. GenderMag is a method for detecting and fixing gender inclusivity issues in software. In this article, we summarize several practices the teams devised and pitfalls they encountered."
+  },
+  {
+    "id": "10.1145/3415251",
+    "title": "Hidden Figures: Roles and Pathways of Successful OSS Contributors",
+    "authors": [
+      "Bianca Trinkenreich",
+      "Mariam Guizani",
+      "Igor Wiese",
+      "Anita Sarma",
+      "Igor Steinmacher"
+    ],
+    "venue": "Proceedings of the ACM on Human-Computer Interaction (CSCW)",
+    "venue_acronym": "CSCW",
+    "year": 2020,
+    "type": "journal",
+    "topics": [
+      "oss"
+    ],
+    "doi": "10.1145/3415251",
+    "links": {
+      "doi": "https://doi.org/10.1145/3415251",
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3415251",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Open Source Software (OSS) development is a collaborative endeavor where expert developers, distributed around the globe create software solutions. Given this characteristic, OSS communities have been studied as technical communities, where stakeholders join and evolve in their careers based on their (often voluntary) code contributions to the project. However, the OSS landscape is slowly changing with more people and companies getting involved in OSS. This means that projects now need people in non-technical roles and activities to keep the project sustainable and evolving. In this paper, we focus on understanding the roles and activities that are part of the current OSS landscape and the different career pathways in OSS. By conducting and analyzing 17 interviews with OSS contributors who are well known in the community, we provide empirical evidence of the existence and importance of community-centric roles (e.g advocate, license manager, community founder) in addition to the well-known project-centric ones (e.g maintainer, core member). However, the community-centric roles typically remain hidden, since these roles may not leave traces in software repositories typically analyzed by researchers. We found that people can build a career in OSS through different roles and activities, with different backgrounds, including those not related to writing software. Furthermore, people's career pathways are fluid, moving between project and community-centric roles. Our work highlights that communities and researchers need to take action to acknowledge the importance of these varied roles, making these roles visible and well-recognized, which can ultimately help attract and retain more people in the OSS projects."
+  },
+  {
+    "id": "debuginclusivitybugs2020",
+    "title": "How to Debug Inclusivity Bugs? An Empirical Investigation of Finding-to-Fixing with Information Architecture",
+    "authors": [
+      "Mariam Guizani",
+      "Igor Steinmacher",
+      "Jillian Emard",
+      "Abrar Fallatah",
+      "Margaret Burnett",
+      "Anita Sarma"
+    ],
+    "venue": "arXiv preprint",
+    "venue_acronym": "arXiv",
+    "year": 2020,
+    "type": "conference",
+    "topics": [
+      "edi",
+      "tools"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10"
+  },
+  {
+    "id": "visualanalytics2018",
+    "title": "Visual Analytics for Identifying Patterns in High-dimensional Decision and Objective Spaces of User-Preferred Conservation Plans",
+    "authors": [
+      "Mariam Guizani",
+      "Meghna Babbar-Sebens",
+      "Eugene Zhang",
+      "Andrea Piemonti",
+      "Sudarshan Mukhopadhyay"
+    ],
+    "venue": "American Geophysical Union Fall Meeting",
+    "venue_acronym": "AGU",
+    "year": 2018,
+    "type": "conference",
+    "topics": [
+      "ese"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10"
+  }
+]

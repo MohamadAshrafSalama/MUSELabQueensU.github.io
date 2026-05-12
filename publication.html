@@ -3,21 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Mariam Guizani's MUSE Lab website showcasing research, publications, and team.">
-    <title>Publication - Mariam Guizani - MUSE Lab</title>
-    <!-- Favicon-->
+    <meta name="description" content="Publications from the MUSE Lab at Queen's University.">
+    <title>Publications - MUSE Lab</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/theme.css" rel="stylesheet" />
     <link href="css/redesign.css" rel="stylesheet" />
+    <link rel="prefetch" href="index.html">
+    <link rel="prefetch" href="members.html">
+    <link rel="prefetch" href="mariamguizani.html">
+    <link rel="prefetch" href="teaching.html">
 </head>
 <body class="page-body page-publication">
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light site-navbar">
+    <nav class="navbar navbar-expand-lg site-navbar">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="MUSE Lab home">
                 <img src="assets/muse-lab-logo.svg" alt="MUSE Lab logo" class="muse-logo">
@@ -32,236 +32,303 @@
                     <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
                     <li class="nav-item"><a class="nav-link active" href="publication.html">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="page-main">
 
-    <!-- Publication Section -->
     <div class="container mt-4">
         <div class="publication-hero content-card">
-            <p class="section-kicker">Publications</p>
-            <h1 class="page-title mb-3">Research outputs and publication layout preview.</h1>
-            <p class="page-intro mb-0">The publication list is being curated. The cards below show the intended academic presentation: venue, year, type, lab-member highlighting, and links for papers, citation data, code, and BibTeX.</p>
-            <div class="scholar-metrics">
-                <div class="scholar-metric">
-                    <span class="scholar-metric__value">487</span>
-                    <span class="scholar-metric__label">Citations</span>
-                </div>
-                <div class="scholar-metric">
-                    <span class="scholar-metric__value">15</span>
-                    <span class="scholar-metric__label">h-index</span>
-                </div>
-                <div class="scholar-metric">
-                    <span class="scholar-metric__value">15</span>
-                    <span class="scholar-metric__label">i10-index</span>
-                </div>
+            <h1 class="page-title mb-3">Publications</h1>
+            <div class="pub-stats-bar">
+                <span class="pub-stat"><span class="pub-stat__value" data-count="499">0</span> citations</span>
+                <span class="pub-stat-sep">&middot;</span>
+                <span class="pub-stat"><span class="pub-stat__value" data-count="15">0</span> h-index</span>
+                <span class="pub-stat-sep">&middot;</span>
+                <span class="pub-stat"><span class="pub-stat__value" id="pub-count" data-count="0">0</span> publications</span>
             </div>
         </div>
 
-        <div class="publication-toolbar">
-            <div>
-                <span class="filter-chip">All years</span>
-                <span class="filter-chip">All types</span>
-                <span class="filter-chip">All themes</span>
-            </div>
-            <span class="text-muted small">Example layout preview</span>
+        <div class="pub-topics">
+            <button class="topic-label active" data-topic="all">All Publications</button>
+            <button class="topic-label" data-topic="oss">Open Source</button>
+            <button class="topic-label" data-topic="edi">EDI</button>
+            <button class="topic-label" data-topic="msr">Mining Software Repos</button>
+            <button class="topic-label" data-topic="productivity">Developer Productivity</button>
+            <button class="topic-label" data-topic="ml4se">ML for SE</button>
+            <button class="topic-label" data-topic="tools">Tools</button>
+            <button class="topic-label" data-topic="ese">Empirical SE</button>
         </div>
 
-        <section class="pub-group">
-            <h2 class="pub-year">2025</h2>
-            <div class="pub-list">
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2025</span>
-                        <span class="pub-card__type">conference</span>
-                        <span class="pub-card__citations">3 citations</span>
-                    </div>
-                    <h3>Reverse Engineering User Stories from Code using Large Language Models</h3>
-                    <p class="pub-authors">M. Ouf, H. Li, M. Zhang, <strong>M. Guizani</strong></p>
-                    <p class="pub-venue">35th IEEE International Conference on Collaborative Advances in Software and Computing</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2025</span>
-                        <span class="pub-card__type">preprint</span>
-                        <span class="pub-card__citations">18 citations</span>
-                    </div>
-                    <h3>The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Review and Mapping Study</h3>
-                    <p class="pub-authors">A. Mohamed, M. Assi, <strong>M. Guizani</strong></p>
-                    <p class="pub-venue">arXiv preprint arXiv:2507.03156</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="pub-group">
-            <h2 class="pub-year">2024</h2>
-            <div class="pub-list">
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2024</span>
-                        <span class="pub-card__type">book chapter</span>
-                        <span class="pub-card__citations">22 citations</span>
-                    </div>
-                    <h3>How to measure diversity actionably in technology</h3>
-                    <p class="pub-authors">M. M. Hamid, A. Chatterjee, <strong>M. Guizani</strong>, A. Anderson, F. Moussaoui, S. Yang, and collaborators</p>
-                    <p class="pub-venue">Equity, Diversity, and Inclusion in Software Engineering: Best Practices and Insights</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="pub-group">
-            <h2 class="pub-year">2023</h2>
-            <div class="pub-list">
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2023</span>
-                        <span class="pub-card__type">conference</span>
-                        <span class="pub-card__citations">23 citations</span>
-                        <span class="pub-card__selected">Selected</span>
-                    </div>
-                    <h3>Rules of engagement: Why and how companies participate in OSS</h3>
-                    <p class="pub-authors"><strong>M. Guizani</strong>, A. A. Castro-Guzman, A. Sarma, I. Steinmacher</p>
-                    <p class="pub-venue">2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">DOI</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2023</span>
-                        <span class="pub-card__type">preprint</span>
-                        <span class="pub-card__citations">16 citations</span>
-                    </div>
-                    <h3>The state of diversity and inclusion in Apache: A pulse check</h3>
-                    <p class="pub-authors">Z. Feng, <strong>M. Guizani</strong>, M. A. Gerosa, A. Sarma</p>
-                    <p class="pub-venue">arXiv preprint arXiv:2303.16344</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="pub-group">
-            <h2 class="pub-year">2022</h2>
-            <div class="pub-list">
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2022</span>
-                        <span class="pub-card__type">conference</span>
-                        <span class="pub-card__citations">48 citations</span>
-                        <span class="pub-card__selected">Selected</span>
-                    </div>
-                    <h3>Attracting and retaining OSS contributors with a maintainer dashboard</h3>
-                    <p class="pub-authors"><strong>M. Guizani</strong>, T. Zimmermann, A. Sarma, D. Ford</p>
-                    <p class="pub-venue">Proceedings of the 2022 ACM/IEEE 44th International Conference on Software Engineering</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">DOI</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2022</span>
-                        <span class="pub-card__type">conference</span>
-                        <span class="pub-card__citations">39 citations</span>
-                    </div>
-                    <h3>How to debug inclusivity bugs? A debugging process with information architecture</h3>
-                    <p class="pub-authors"><strong>M. Guizani</strong>, I. Steinmacher, J. Emard, A. Fallatah, M. Burnett, A. Sarma</p>
-                    <p class="pub-venue">Proceedings of the 2022 ACM/IEEE 44th International Conference on Software Engineering</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="pub-group">
-            <h2 class="pub-year">2021 and 2020</h2>
-            <div class="pub-list">
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2021</span>
-                        <span class="pub-card__type">journal</span>
-                        <span class="pub-card__citations">54 citations</span>
-                        <span class="pub-card__selected">Selected</span>
-                    </div>
-                    <h3>The Long Road Ahead: Ongoing Challenges in Contributing to Large OSS Organizations and What to Do</h3>
-                    <p class="pub-authors"><strong>M. Guizani</strong>, A. Chatterjee, B. Trinkenreich, M. E. May, G. J. Noa-Guevara, and collaborators</p>
-                    <p class="pub-venue">Proceedings of the ACM on Human-Computer Interaction, CSCW2</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-                <article class="pub-card">
-                    <div class="pub-card__meta">
-                        <span class="pub-card__year">2020</span>
-                        <span class="pub-card__type">journal</span>
-                        <span class="pub-card__citations">93 citations</span>
-                        <span class="pub-card__selected">Selected</span>
-                    </div>
-                    <h3>Hidden figures: Roles and pathways of successful OSS contributors</h3>
-                    <p class="pub-authors">B. Trinkenreich, <strong>M. Guizani</strong>, I. Wiese, A. Sarma, I. Steinmacher</p>
-                    <p class="pub-venue">Proceedings of the ACM on Human-Computer Interaction, CSCW2</p>
-                    <div class="pub-actions">
-                        <a href="#" class="pub-action">PDF</a>
-                        <a href="#" class="pub-action">BibTeX</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <div class="content-card mt-4">
-            <h2 class="section-title h4">Research Connections</h2>
-            <p class="mb-0">Selected co-authors and research collaborators represented in Dr. Guizani's publication network.</p>
-            <div class="connection-grid" aria-label="Research collaborators">
-                <span class="connection-chip">Anita Sarma</span>
-                <span class="connection-chip">Igor Steinmacher</span>
-                <span class="connection-chip">Bianca Trinkenreich</span>
-                <span class="connection-chip">Marco Aurelio Gerosa</span>
-                <span class="connection-chip">Margaret Burnett</span>
-                <span class="connection-chip">Thomas Zimmermann</span>
-                <span class="connection-chip">Denae Ford</span>
-                <span class="connection-chip">Eugene Zhang</span>
-                <span class="connection-chip">Meghna Babbar-Sebens</span>
-                <span class="connection-chip">Alexander Serebrenik</span>
-                <span class="connection-chip">Brittany I. Johnson</span>
-                <span class="connection-chip">Elijah Kayode Adejumo</span>
-                <span class="connection-chip">Aaliyah Chang</span>
-            </div>
+        <div class="pub-topics pub-type-filters">
+            <button class="type-label active" data-pubtype="all">All Types</button>
+            <button class="type-label" data-pubtype="journal">Journal</button>
+            <button class="type-label" data-pubtype="conference">Conference</button>
+            <button class="type-label" data-pubtype="book-chapter">Book Chapter</button>
         </div>
 
-        <div class="content-card mt-4">
-            <h2 class="section-title h4">Future publication workflow</h2>
-            <p class="mb-0">In the final version, each paper can be generated from a BibTeX or structured data file so the page stays easy to maintain while still looking polished and complete.</p>
+        <div class="pub-list" id="pub-list">
+            <p class="text-muted">Loading publications...</p>
         </div>
-    </div>  
+
+    </div>
     </main>
 
-  
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">MUSE Lab</div>
+                    <p>Moving Intelligent User-Centric Software Engineering Lab at Queen's University, Kingston, Canada.</p>
+                </div>
+                <div>
+                    <div class="footer-brand">Pages</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mariamguizani.html">Dr. Guizani</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="publication.html">Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-brand">Contact</div>
+                    <ul class="footer-links">
+                        <li>mariam.guizani@queensu.ca</li>
+                        <li>Queen's University, Kingston ON</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2026 MUSE Lab, Queen's University. All rights reserved.</div>
+        </div>
+    </footer>
 
-    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+    (function() {
+        var TOPIC_LABELS = {
+            oss: 'Open Source',
+            edi: 'EDI',
+            msr: 'Mining Software Repos',
+            productivity: 'Developer Productivity',
+            ml4se: 'ML for SE',
+            tools: 'Tools',
+            ese: 'Empirical SE'
+        };
+
+        var TOPIC_COLORS = {
+            oss: 'pub-tag--oss',
+            edi: 'pub-tag--edi',
+            msr: 'pub-tag--msr',
+            productivity: 'pub-tag--productivity',
+            ml4se: 'pub-tag--ml4se',
+            tools: 'pub-tag--tools',
+            ese: 'pub-tag--ese'
+        };
+
+        var LAB_MEMBERS = [
+            'Mariam Guizani', 'Mohamed Ouf', 'Amr Mohamed', 'Haoyu Li',
+            'Michael Zhang', 'Aaliyah Chang', 'Yawar Ashraf', 'Zeph Van Iterson',
+            'Elias Frigui', 'Robyn Elliot'
+        ];
+
+        var activeTopic = 'all';
+        var activeType = 'all';
+
+        function boldLabMembers(authors) {
+            return authors.map(function(a) {
+                for (var i = 0; i < LAB_MEMBERS.length; i++) {
+                    if (a.indexOf(LAB_MEMBERS[i]) !== -1 || LAB_MEMBERS[i].indexOf(a) !== -1) {
+                        return '<strong>' + escapeHtml(a) + '</strong>';
+                    }
+                }
+                return escapeHtml(a);
+            }).join(', ');
+        }
+
+        function escapeHtml(str) {
+            var div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function generateBibtex(paper) {
+            var firstAuthor = paper.authors[0].split(' ');
+            var lastName = firstAuthor[firstAuthor.length - 1].toLowerCase();
+            var firstWord = paper.title.split(/[\s:]+/)[0].toLowerCase().replace(/[^a-z]/g, '');
+            var key = lastName + paper.year + firstWord;
+
+            var entryType = paper.type === 'journal' ? 'article' : (paper.type === 'book-chapter' ? 'incollection' : 'inproceedings');
+
+            var authorStr = paper.authors.map(function(a) {
+                var parts = a.split(' ');
+                var last = parts.pop();
+                return last + ', ' + parts.join(' ');
+            }).join(' and ');
+
+            var bib = '@' + entryType + '{' + key + ',\n';
+            bib += '  title={' + paper.title + '},\n';
+            bib += '  author={' + authorStr + '},\n';
+            if (paper.type === 'journal') {
+                bib += '  journal={' + paper.venue + '},\n';
+            } else if (paper.type === 'book-chapter') {
+                bib += '  booktitle={' + paper.venue + '},\n';
+            } else {
+                bib += '  booktitle={' + paper.venue + '},\n';
+            }
+            bib += '  year={' + paper.year + '}';
+            if (paper.doi) {
+                bib += ',\n  doi={' + paper.doi + '}';
+            }
+            bib += '\n}';
+            return bib;
+        }
+
+        function renderCard(paper) {
+            var topicsAttr = paper.topics.join(' ');
+            var typeNorm = paper.type === 'book chapter' ? 'book-chapter' : paper.type;
+
+            var html = '<article class="pub-card" data-topics="' + topicsAttr + '" data-type="' + typeNorm + '" data-venue="' + escapeHtml(paper.venue_acronym || '') + '">';
+
+            html += '<div class="pub-card__meta">';
+            html += '<span class="pub-card__year">' + paper.year + '</span>';
+            html += '<span class="pub-card__type">' + escapeHtml(paper.type) + '</span>';
+            if (paper.venue_acronym && paper.venue_acronym !== 'arXiv') {
+                html += '<span class="pub-card__venue-badge">' + escapeHtml(paper.venue_acronym) + '</span>';
+            }
+            html += '</div>';
+
+            html += '<h3 class="pub-card__title">' + escapeHtml(paper.title) + '</h3>';
+            html += '<p class="pub-authors">' + boldLabMembers(paper.authors) + '</p>';
+            if (paper.venue) {
+                html += '<p class="pub-venue">' + escapeHtml(paper.venue) + '</p>';
+            }
+
+            if (paper.abstract) {
+                html += '<div class="pub-abstract">';
+                html += '<p>' + escapeHtml(paper.abstract) + '</p>';
+                html += '</div>';
+            }
+
+            html += '<div class="pub-card__tags">';
+            paper.topics.forEach(function(t) {
+                html += '<span class="pub-tag ' + (TOPIC_COLORS[t] || '') + '">' + (TOPIC_LABELS[t] || t) + '</span>';
+            });
+            html += '</div>';
+
+            html += '<div class="pub-actions">';
+            if (paper.links && paper.links.doi) {
+                html += '<a href="' + paper.links.doi + '" class="pub-action" target="_blank" rel="noopener" aria-label="DOI"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a>';
+            }
+            if (paper.links && paper.links.pdf) {
+                html += '<a href="' + paper.links.pdf + '" class="pub-action" target="_blank" rel="noopener" aria-label="PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></a>';
+            }
+            if (paper.links && paper.links.presentation) {
+                html += '<a href="' + paper.links.presentation + '" class="pub-action" target="_blank" rel="noopener" aria-label="Slides"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></a>';
+            }
+            html += '<button class="pub-action pub-bibtex-btn" type="button" aria-label="Copy BibTeX"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></button>';
+            html += '</div>';
+
+            html += '</article>';
+            return html;
+        }
+
+        function filterCards() {
+            document.querySelectorAll('.pub-card').forEach(function(card) {
+                var topics = card.getAttribute('data-topics').split(' ');
+                var topicMatch = activeTopic === 'all' || topics.indexOf(activeTopic) !== -1;
+                var typeMatch = activeType === 'all' || card.getAttribute('data-type') === activeType;
+                card.style.display = (topicMatch && typeMatch) ? '' : 'none';
+            });
+        }
+
+        function animateCounters() {
+            document.querySelectorAll('.pub-stat__value').forEach(function(el) {
+                var target = parseInt(el.getAttribute('data-count'), 10);
+                var duration = 1200;
+                var start = null;
+                function step(ts) {
+                    if (!start) start = ts;
+                    var progress = Math.min((ts - start) / duration, 1);
+                    var ease = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = Math.floor(target * ease);
+                    if (progress < 1) requestAnimationFrame(step);
+                    else el.textContent = target;
+                }
+                requestAnimationFrame(step);
+            });
+        }
+
+        fetch('data/publications.json')
+            .then(function(res) { return res.json(); })
+            .then(function(papers) {
+                papers.sort(function(a, b) { return b.year - a.year; });
+
+                var pubCountEl = document.getElementById('pub-count');
+                if (pubCountEl) pubCountEl.setAttribute('data-count', papers.length);
+
+                var container = document.getElementById('pub-list');
+                var html = '';
+                papers.forEach(function(paper) {
+                    html += renderCard(paper);
+                });
+                container.innerHTML = html;
+
+                container.addEventListener('click', function(e) {
+                    if (e.target.closest('.pub-action')) {
+                        // let action buttons handle themselves
+                    } else {
+                        var card = e.target.closest('.pub-card');
+                        if (card) {
+                            var wasOpen = card.classList.contains('pub-card--open');
+                            container.querySelectorAll('.pub-card--open').forEach(function(c) {
+                                c.classList.remove('pub-card--open');
+                            });
+                            if (!wasOpen) card.classList.add('pub-card--open');
+                            return;
+                        }
+                    }
+                    var btn = e.target.closest('.pub-bibtex-btn');
+                    if (!btn) return;
+                    var card = btn.closest('.pub-card');
+                    var idx = Array.from(container.querySelectorAll('.pub-card')).indexOf(card);
+                    var bibtex = generateBibtex(papers[idx]);
+                    navigator.clipboard.writeText(bibtex).then(function() {
+                        var origHTML = btn.innerHTML;
+                        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+                        btn.setAttribute('aria-label', 'Copied!');
+                        btn.classList.add('pub-action--copied');
+                        setTimeout(function() {
+                            btn.innerHTML = origHTML;
+                            btn.setAttribute('aria-label', 'Copy BibTeX');
+                            btn.classList.remove('pub-action--copied');
+                        }, 1500);
+                    });
+                });
+
+                document.querySelectorAll('.topic-label').forEach(function(btn) {
+                    btn.addEventListener('click', function() {
+                        document.querySelectorAll('.topic-label').forEach(function(b) { b.classList.remove('active'); });
+                        btn.classList.add('active');
+                        activeTopic = btn.getAttribute('data-topic');
+                        filterCards();
+                    });
+                });
+
+                document.querySelectorAll('.type-label').forEach(function(btn) {
+                    btn.addEventListener('click', function() {
+                        document.querySelectorAll('.type-label').forEach(function(b) { b.classList.remove('active'); });
+                        btn.classList.add('active');
+                        activeType = btn.getAttribute('data-pubtype');
+                        filterCards();
+                    });
+                });
+
+                animateCounters();
+            });
+    })();
+    </script>
+    <script src="js/fancy.js"></script>
 </body>
 </html>
