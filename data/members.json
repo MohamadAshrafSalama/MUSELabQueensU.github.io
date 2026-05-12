@@ -1,72 +1,92 @@
 [
   {
-    "name": "Mariam Guizani",
-    "aliases": ["M. Guizani", "Mariam G."],
-    "role": "Principal Investigator",
-    "semantic_scholar_ids": ["1999402349", "2374475735"],
-    "active": true
-  },
-  {
-    "name": "Robyn Elliot",
-    "aliases": ["R. Elliot"],
-    "role": "PhD Student",
-    "semantic_scholar_ids": [],
-    "active": true
-  },
-  {
-    "name": "Mohamed Ouf",
-    "aliases": ["Mohamed Ashraf Ouf", "M. Ouf", "Mohamad Ashraf"],
-    "role": "MASc Student",
+    "name": "Aaliyah Chang",
+    "aliases": [],
+    "role": "MASc Student in Electrical and Computer Engineering",
+    "status": "Graduate",
     "semantic_scholar_ids": [],
     "active": true
   },
   {
     "name": "Amr Mohamed",
-    "aliases": ["A. Mohamed", "Amr M."],
-    "role": "MASc Student",
+    "aliases": [],
+    "role": "MASc (Fall 2024 - Pres)",
+    "status": "Graduate",
     "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Elias Frigui",
+    "aliases": [],
+    "role": "Research Assistant (Mar 2024 - Aug 2024)",
+    "status": "Alumni",
+    "semantic_scholar_ids": [],
+    "active": false
+  },
+  {
+    "name": "Haoyu Li",
+    "aliases": [],
+    "role": "MEng (Mar 2024 - Nov 2024)",
+    "status": "Alumni",
+    "semantic_scholar_ids": [],
+    "active": false
+  },
+  {
+    "name": "Mariam Guizani",
+    "aliases": [
+      "M. Guizani",
+      "Mariam G."
+    ],
+    "role": "Assistant Professor & Connected Minds Member",
+    "status": "PI",
+    "semantic_scholar_ids": [
+      "1999402349",
+      "2374475735"
+    ],
     "active": true
   },
   {
     "name": "Michael Zhang",
-    "aliases": ["M. Zhang"],
-    "role": "MEng Student",
+    "aliases": [],
+    "role": "MEng (Mar 2024 - Pres)",
+    "status": "Graduate",
     "semantic_scholar_ids": [],
     "active": true
   },
   {
-    "name": "Aaliyah Chang",
-    "aliases": ["A. Chang"],
-    "role": "MASc Student",
+    "name": "Mohamed Ouf",
+    "aliases": [
+      "Mohamed Ashraf Ouf",
+      "M. Ouf",
+      "Mohamad Ashraf"
+    ],
+    "role": "MASc (Fall 2024 - Pres)",
+    "status": "Graduate",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Robyn Elliot",
+    "aliases": [],
+    "role": "PhD (Fall 2024 - pres)",
+    "status": "Graduate",
     "semantic_scholar_ids": [],
     "active": true
   },
   {
     "name": "Yawar Ashraf",
-    "aliases": ["Y. Ashraf"],
+    "aliases": [],
     "role": "MASc Student",
+    "status": "Graduate",
     "semantic_scholar_ids": [],
     "active": true
   },
   {
     "name": "Zeph Van Iterson",
-    "aliases": ["Z. Van Iterson"],
-    "role": "Undergraduate Research Assistant",
+    "aliases": [],
+    "role": "Research Assistant (Mar 2024 - pres)",
+    "status": "Undergraduate",
     "semantic_scholar_ids": [],
     "active": true
-  },
-  {
-    "name": "Haoyu Li",
-    "aliases": ["H. Li"],
-    "role": "Alumni (MEng)",
-    "semantic_scholar_ids": [],
-    "active": false
-  },
-  {
-    "name": "Elias Frigui",
-    "aliases": ["E. Frigui"],
-    "role": "Alumni (Research Assistant)",
-    "semantic_scholar_ids": [],
-    "active": false
   }
 ]

@@ -1,0 +1,155 @@
+[
+  {
+    "badge": "May 2026",
+    "sort_date": "2026-05",
+    "text": "Our paper <em>\"Do Good, Stay Longer?\"</em> by Mohamed Ouf, Amr Mohamed, and Mariam Guizani has been accepted at <strong>EASE 2026</strong> (Research Track). We studied how newcomers become core contributors in open source projects focused on social good.",
+    "link_url": "https://arxiv.org/abs/2601.23142",
+    "link_label": "Read the preprint",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "May 2026",
+    "sort_date": "2026-05",
+    "text": "Our paper <em>\"Same Project, Different Start\"</em> by Mohamed Ouf and Mariam Guizani has also been accepted at <strong>EASE 2026</strong> (Research Track). This work looks at how contribution events like hackathons and mentorships shape long-term activity in open source.",
+    "link_url": "https://arxiv.org/abs/2604.22120",
+    "link_label": "Read the preprint",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Apr 2026",
+    "sort_date": "2026-04",
+    "text": "The MUSE Lab attended <strong>ICSE 2026</strong> in Rio de Janeiro! We presented three papers across the Main Track, NIER, and CHASE.",
+    "link_url": "",
+    "link_label": "",
+    "image": "icse-2026-lab.jpg",
+    "image_alt": "Yawar Ashraf, Dr. Mariam Guizani, and Aaliyah Chang at ICSE 2026 in Rio de Janeiro"
+  },
+  {
+    "badge": "Apr 2026",
+    "sort_date": "2026-04",
+    "text": "Dr. Guizani and Nathan Cassee organized a fishbowl-style panel at <strong>CHASE 2026</strong> called <em>\"The Human Side of Developer Experience\"</em>, bringing together researchers for an open discussion on human factors in software engineering.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Mar 2026",
+    "sort_date": "2026-03",
+    "text": "Three papers accepted at <strong>ICSE 2026</strong>! Our work on OSS4SG community patterns got into the Main Track, our collaboration on LLM-driven documentation translation into the NIER Track, and Aaliyah Chang's work on motivations in software engineering into CHASE.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Mar 2026",
+    "sort_date": "2026-03",
+    "text": "Our <em>Community Tapestry</em> dashboard was presented at <strong>SANER 2026</strong> as part of the Journal First track. This tool helps open source project leaders track diversity and turnover in their communities.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Mar 2026",
+    "sort_date": "2026-03",
+    "text": "Dr. Guizani received funding from the <strong>Ontario Research Fund</strong> as part of Ontario's $47M investment in research and innovation, supporting our work on sustainable open source and developer productivity.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Feb 2026",
+    "sort_date": "2026-02",
+    "text": "Our systematic review on the impact of LLM assistants on developer productivity by Amr Mohamed, Maram Assi, and Mariam Guizani has been accepted at <strong>TOSEM</strong>.",
+    "link_url": "https://arxiv.org/abs/2507.03156",
+    "link_label": "Read the preprint",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Nov 2025",
+    "sort_date": "2025-11",
+    "text": "Mohamad Ashraf presented our paper on reverse engineering user stories from code using LLMs at <strong>CASCON 2025</strong> in Toronto.",
+    "link_url": "https://doi.org/10.1109/CASCON66301.2025.00080",
+    "link_label": "Read the paper",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Nov 2025",
+    "sort_date": "2025-11",
+    "text": "Michael Zhang presented our work on programming language topic classification at <strong>CASCON 2025</strong> in Toronto.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Sep 2025",
+    "sort_date": "2025-09",
+    "text": "The MUSE Lab is welcoming international undergraduate students through the <strong>Mitacs Globalink Research Internship</strong> program for summer 2026.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Jul 2025",
+    "sort_date": "2025-07",
+    "text": "Dr. Guizani was voted the favorite 3rd-year professor in Electrical and Computer Engineering at Queen's and received the <strong>Undergraduate Teaching Award</strong>.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Jun 2025",
+    "sort_date": "2025-06",
+    "text": "Dr. Guizani received an <strong>NSERC Discovery Grant</strong> to develop actionable diversity and inclusion tools for socio-technically sustainable open source software.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "May 2025",
+    "sort_date": "2025-05",
+    "text": "Dr. Guizani served as Media Co-Chair for <strong>CASCON 2025</strong>, the 35th anniversary of the IEEE International Conference on Collaborative Advances in Software and Computing.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Apr 2024",
+    "sort_date": "2024-04",
+    "text": "Dr. Guizani received the <strong>Frank Knox Award</strong> for Excellence in Teaching at Queen's University, recognizing her outstanding commitment to students.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Nov 2022",
+    "sort_date": "2022-11",
+    "text": "Our research on the Maintainer Dashboard helped inform the <strong>GitHub Discussions Dashboard</strong> and was featured on the GitHub blog. This work came out of Dr. Guizani's internship at Microsoft Research.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  },
+  {
+    "badge": "Sep 2021",
+    "sort_date": "2021-09",
+    "text": "Dr. Guizani was an invited speaker at the <strong>Open Source Summit 2021</strong> in Seattle, organized by the Linux Foundation, where she presented on developer productivity in open source communities.",
+    "link_url": "",
+    "link_label": "",
+    "image": "",
+    "image_alt": ""
+  }
+]
