@@ -6,18 +6,24 @@ You don't need to touch any HTML or CSS. Everything that changes regularly
 The flow is always the same:
 
 1. Edit the Excel sheets in this folder.
-2. From the project root, run:
-   ```
-   python scripts/update_site.py
-   ```
-3. Look at `git status` to see what changed.
-4. Commit the changes.
+2. From the project root, **double-click**:
+   - `update-site.command` (Mac)
+   - `update-site.bat` (Windows)
+3. Look at `git status` (or open GitHub Desktop) to see what changed.
+4. Commit and push.
 
-If you've never run the script before, install the dependencies first:
+The first time you double-click the launcher it sets up its own Python
+virtual environment in a hidden `.venv/` folder. That takes about 30
+seconds. Every run after that is instant.
+
+You need **Python 3** installed. The launcher will tell you if it's
+missing and where to download it.
+
+If you'd rather run the script from the terminal, the equivalent is:
 
 ```
-python3 -m venv .venv
-.venv/bin/pip install -r scripts/requirements.txt
+python3 -m venv .venv               # only the first time
+.venv/bin/pip install -r scripts/requirements.txt   # only the first time
 .venv/bin/python scripts/update_site.py
 ```
 
