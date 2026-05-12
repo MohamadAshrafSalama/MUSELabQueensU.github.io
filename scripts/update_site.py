@@ -146,6 +146,14 @@ def replace_between_markers(text, start_marker, end_marker, new_block):
 # Template creation
 # --------------------------------------------------------------------------
 
+PUB_BASE_HEADERS = [
+    "Title", "Authors", "Year", "Venue", "Venue Acronym",
+    "Type", "DOI", "PDF URL", "Slides URL", "Abstract",
+]
+PUB_HEADERS = PUB_BASE_HEADERS + [TOPIC_LABELS[c] for c in TOPIC_CODES]
+PUB_REQUIRED_INDEXES = {0, 1, 2, 3, 5}  # Title, Authors, Year, Venue, Type
+
+
 def init_publications_template():
     if PUBS_XLSX.exists():
         return
@@ -156,20 +164,15 @@ def init_publications_template():
     ws = wb.active
     ws.title = "Publications"
 
-    headers = [
-        "Title", "Authors", "Year", "Venue", "Venue Acronym",
-        "Type", "Topics", "DOI",
-        "PDF URL", "Slides URL", "Abstract",
-    ]
-    required = {0, 1, 2, 3, 5, 6}
-    style_header_row(ws, headers, required)
-    autosize(ws, [55, 35, 8, 45, 14, 14, 30, 30, 35, 35, 60])
+    style_header_row(ws, PUB_HEADERS, PUB_REQUIRED_INDEXES)
+    widths = [55, 35, 8, 45, 14, 14, 30, 35, 35, 60] + [14] * len(TOPIC_CODES)
+    autosize(ws, widths)
 
-    # Notes on header cells
-    ws["A1"].comment = Comment("Full paper title. Required.", "Site")
+    # Header comments
+    ws["A1"].comment = Comment("Full paper title.", "Site")
     ws["B1"].comment = Comment(
-        "Comma-separated, in citation order. Use full names. Example:\n"
-        "Mohamed Ouf, Mariam Guizani, Amr Mohamed",
+        "Comma-separated authors in citation order. Use full names.\n"
+        "Example: Mohamed Ouf, Mariam Guizani, Amr Mohamed",
         "Site",
     )
     ws["C1"].comment = Comment("Four-digit year. Example: 2026", "Site")
@@ -178,35 +181,35 @@ def init_publications_template():
         "Site",
     )
     ws["E1"].comment = Comment("Short acronym. Example: ICSE, TOSEM, CSCW", "Site")
-    ws["F1"].comment = Comment(
-        "Pick one from the dropdown:\n" + ", ".join(TYPE_CODES), "Site"
-    )
+    ws["F1"].comment = Comment("Pick one from the dropdown.", "Site")
     ws["G1"].comment = Comment(
-        "Comma-separated. Pick from:\n" + ", ".join(
-            f"{c} ({TOPIC_LABELS[c]})" for c in TOPIC_CODES
-        ) + "\nExample: oss, msr",
+        "DOI without https://doi.org/ prefix. Example: 10.1145/3744916.3787782",
         "Site",
     )
-    ws["H1"].comment = Comment(
-        "DOI without https://doi.org/ prefix. Example: 10.1145/3744916.3787782", "Site"
-    )
+    ws["H1"].comment = Comment("Direct link to preprint PDF (arXiv, etc.). Optional.", "Site")
     ws["I1"].comment = Comment(
-        "Direct link to preprint PDF (arXiv, personal site, etc.). Optional.", "Site"
+        "If slides are a local PDF, drop them in updates/publications/files/ "
+        "and put just the filename here (e.g. icse-2026.pdf).",
+        "Site",
     )
-    ws["J1"].comment = Comment(
-        "Link to slides. If you have a local PDF, drop it in updates/publications/files/ "
-        "and put just the filename here (e.g. icse-2026-slides.pdf).", "Site"
-    )
-    ws["K1"].comment = Comment("Paper abstract. Optional but recommended.", "Site")
+    ws["J1"].comment = Comment("Paper abstract. Optional but recommended.", "Site")
 
-    # Data validation: type dropdown
+    # Topic column comments
+    for i, code in enumerate(TOPIC_CODES):
+        col_letter = get_column_letter(len(PUB_BASE_HEADERS) + 1 + i)
+        ws[f"{col_letter}1"].comment = Comment(
+            f"Pick X if this paper is about {TOPIC_LABELS[code]}. Leave blank otherwise.",
+            "Site",
+        )
+
+    # Type dropdown
     type_dv = DataValidation(
         type="list", formula1='"' + ",".join(TYPE_CODES) + '"', allow_blank=True
     )
     type_dv.error = "Pick one of: " + ", ".join(TYPE_CODES)
     type_dv.errorTitle = "Invalid type"
     ws.add_data_validation(type_dv)
-    type_dv.add(f"F2:F1000")
+    type_dv.add("F2:F1000")
 
     # Year validation
     year_dv = DataValidation(type="whole", operator="between", formula1=1990, formula2=2100)
@@ -214,32 +217,67 @@ def init_publications_template():
     ws.add_data_validation(year_dv)
     year_dv.add("C2:C1000")
 
+    # X dropdown for each topic column
+    xdv = DataValidation(type="list", formula1='"X"', allow_blank=True)
+    xdv.error = "Use X to check, or leave blank."
+    ws.add_data_validation(xdv)
+    for i in range(len(TOPIC_CODES)):
+        col_letter = get_column_letter(len(PUB_BASE_HEADERS) + 1 + i)
+        xdv.add(f"{col_letter}2:{col_letter}1000")
+
+    # Pre-populate with current papers from publications.json
+    existing = load_json(PUBS_JSON, [])
+    existing.sort(key=lambda p: (-int(p.get("year") or 0), p.get("title", "")))
+    for row_idx, paper in enumerate(existing, start=2):
+        ws.cell(row=row_idx, column=1, value=paper.get("title", ""))
+        ws.cell(row=row_idx, column=2, value=", ".join(paper.get("authors", [])))
+        ws.cell(row=row_idx, column=3, value=paper.get("year"))
+        ws.cell(row=row_idx, column=4, value=paper.get("venue", ""))
+        ws.cell(row=row_idx, column=5, value=paper.get("venue_acronym", ""))
+        ws.cell(row=row_idx, column=6, value=paper.get("type", ""))
+        ws.cell(row=row_idx, column=7, value=paper.get("doi", "") or "")
+        links = paper.get("links", {}) or {}
+        ws.cell(row=row_idx, column=8, value=links.get("pdf", ""))
+        ws.cell(row=row_idx, column=9, value=links.get("presentation", ""))
+        ws.cell(row=row_idx, column=10, value=paper.get("abstract", ""))
+        topics = paper.get("topics", []) or []
+        for i, code in enumerate(TOPIC_CODES):
+            col = len(PUB_BASE_HEADERS) + 1 + i
+            if code in topics:
+                ws.cell(row=row_idx, column=col, value="X").alignment = Alignment(
+                    horizontal="center"
+                )
+
     # Instructions sheet
     instr = wb.create_sheet("Instructions")
-    instr["A1"] = "How to add a publication"
+    instr["A1"] = "How to use this sheet"
     instr["A1"].font = Font(bold=True, size=14)
     rows = [
         "",
-        "1. Open the Publications sheet.",
-        "2. Add one row per paper. Columns marked with * are required.",
-        "3. For Type, click the cell to use the dropdown.",
-        "4. For Topics, enter a comma-separated list using these codes:",
-        "      " + ", ".join(f"{c} = {TOPIC_LABELS[c]}" for c in TOPIC_CODES),
-        "5. For Slides, drop the PDF in updates/publications/files/ and enter just the filename.",
-        "6. Save the file.",
-        "7. From the project root, run:",
-        "      python scripts/update_site.py",
-        "8. Review what changed with `git status` and `git diff`, then commit.",
+        "This sheet is the source of truth for all publications on the site.",
+        "Editing a row updates the paper. Deleting a row removes it. Adding a row creates a new one.",
         "",
-        "Duplicate detection: rows are merged with existing publications by DOI or by title.",
-        "Editing an existing paper: change the row whose DOI matches and run the script.",
+        "Steps:",
+        "  1. Find or add the paper's row.",
+        "  2. Fill in the columns marked with * (required).",
+        "  3. For Type, use the dropdown.",
+        "  4. For Topics, put X in each topic column that applies.",
+        "  5. For Slides, drop the PDF in updates/publications/files/ and enter just the filename.",
+        "  6. Save the file.",
+        "  7. From the project root, run:",
+        "        python scripts/update_site.py",
+        "  8. Review the changes with `git status` and commit.",
+        "",
+        "Running the script twice in a row with no Excel changes does NOTHING.",
+        "Adding a paper that's already there (by DOI or title) does NOTHING.",
+        "Removing a row from this sheet DOES remove the paper from the site.",
     ]
     for i, r in enumerate(rows, start=2):
         instr.cell(row=i, column=1, value=r).font = INSTR_FONT
     instr.column_dimensions["A"].width = 100
 
     wb.save(PUBS_XLSX)
-    print(f"  created {PUBS_XLSX.relative_to(ROOT)}")
+    print(f"  created {PUBS_XLSX.relative_to(ROOT)} (pre-filled with {len(existing)} papers)")
 
 
 def init_news_template():
@@ -446,46 +484,78 @@ def process_publications():
         return False
     ws = wb["Publications"]
 
-    headers = [(c.value or "").rstrip(" *") for c in ws[1]]
-    new_entries = []
+    # Build column-name → column-index map from the header row
+    col_index = {}
+    for i, cell in enumerate(ws[1], start=1):
+        if cell.value:
+            col_index[str(cell.value).rstrip(" *").strip()] = i
+
+    def get(row_idx, col_name):
+        idx = col_index.get(col_name)
+        if not idx:
+            return None
+        return ws.cell(row=row_idx, column=idx).value
+
+    # Preserve metadata (added_by, added_on) from the existing JSON, keyed by DOI/title
+    existing = load_json(PUBS_JSON, [])
+    existing_meta = {}
+    for p in existing:
+        key = (p.get("doi") or p.get("title", "").lower().strip())
+        if key:
+            existing_meta[key] = p
+
+    rebuilt = []
     today = date.today().isoformat()
+    skipped = 0
 
     for row_idx in range(2, ws.max_row + 1):
-        row = {h: ws.cell(row=row_idx, column=i + 1).value for i, h in enumerate(headers)}
-        title = (row.get("Title") or "").strip()
+        title = (get(row_idx, "Title") or "")
+        title = str(title).strip() if title else ""
         if not title:
             continue
-        authors = split_list(row.get("Authors"))
-        year = row.get("Year")
-        venue = (row.get("Venue") or "").strip()
-        ptype = (row.get("Type") or "").strip().lower()
-        topics = [t.lower() for t in split_list(row.get("Topics"))]
-        unknown_topics = [t for t in topics if t not in TOPIC_CODES]
-        if unknown_topics:
-            print(f"  row {row_idx}: unknown topics {unknown_topics} — skipping")
-            continue
+
+        authors = split_list(get(row_idx, "Authors"))
+        year = get(row_idx, "Year")
+        venue = (str(get(row_idx, "Venue") or "")).strip()
+        ptype_raw = get(row_idx, "Type")
+        ptype = str(ptype_raw or "").strip().lower()
+
+        # Read topics from the per-topic columns (X means selected)
+        topics = []
+        for code in TOPIC_CODES:
+            value = get(row_idx, TOPIC_LABELS[code])
+            if value and str(value).strip().upper() in ("X", "TRUE", "YES", "1"):
+                topics.append(code)
+
         if ptype not in TYPE_CODES:
-            print(f"  row {row_idx}: invalid type {ptype!r} — skipping")
+            print(f"  row {row_idx} ({title[:40]!r}): invalid Type {ptype_raw!r} — skipping")
+            skipped += 1
             continue
         if not (authors and year and venue):
-            print(f"  row {row_idx}: missing required field — skipping")
+            print(f"  row {row_idx} ({title[:40]!r}): missing required field — skipping")
+            skipped += 1
             continue
 
-        doi = (row.get("DOI") or "").strip().replace("https://doi.org/", "")
-        venue_acronym = (row.get("Venue Acronym") or "").strip()
-        pdf = (row.get("PDF URL") or "").strip()
-        slides = (row.get("Slides URL") or "").strip()
-        abstract = (row.get("Abstract") or "").strip()
+        doi = str(get(row_idx, "DOI") or "").strip().replace("https://doi.org/", "")
+        venue_acronym = str(get(row_idx, "Venue Acronym") or "").strip()
+        pdf = str(get(row_idx, "PDF URL") or "").strip()
+        slides = str(get(row_idx, "Slides URL") or "").strip()
+        abstract = str(get(row_idx, "Abstract") or "").strip()
 
         # Slides may be a local filename; copy it to files/
-        if slides and "://" not in slides:
+        if slides and "://" not in slides and not slides.startswith("files/"):
             src = PUBS_FILES_DIR / slides
             if src.exists():
                 FILES.mkdir(parents=True, exist_ok=True)
                 shutil.copy(src, FILES / slides)
                 slides = "files/" + slides
+            elif (FILES / slides).exists():
+                slides = "files/" + slides
             else:
-                print(f"  row {row_idx}: slides file {slides!r} not found in updates/publications/files/")
+                print(
+                    f"  row {row_idx} ({title[:40]!r}): slides file {slides!r} not found "
+                    "in updates/publications/files/"
+                )
                 slides = ""
 
         links = {}
@@ -495,6 +565,9 @@ def process_publications():
             links["pdf"] = pdf
         if slides:
             links["presentation"] = slides
+
+        key = doi or title.lower().strip()
+        prev = existing_meta.get(key, {})
 
         entry = {
             "id": doi or slugify(f"{authors[0]} {year} {title.split()[0]}"),
@@ -507,29 +580,32 @@ def process_publications():
             "topics": topics,
             "doi": doi,
             "links": links,
-            "added_by": "manual",
-            "added_on": today,
+            "added_by": prev.get("added_by", "manual"),
+            "added_on": prev.get("added_on", today),
             "abstract": abstract,
         }
-        new_entries.append(entry)
+        rebuilt.append(entry)
 
-    existing = load_json(PUBS_JSON, [])
-    by_key = {(p.get("doi") or p["title"].lower().strip()): p for p in existing}
+    # Safety check: don't wipe everything by accident
+    if not rebuilt and existing:
+        print(
+            f"  publications: refusing to write empty list — Excel has 0 valid rows but "
+            f"JSON has {len(existing)}. Did you mean to delete every paper? "
+            "If yes, set Title='__DELETE_ALL__' on row 2 and re-run."
+        )
+        return False
 
-    added = 0
-    updated = 0
-    for entry in new_entries:
-        key = entry["doi"] or entry["title"].lower().strip()
-        if key in by_key:
-            by_key[key].update(entry)
-            updated += 1
-        else:
-            existing.append(entry)
-            by_key[key] = entry
-            added += 1
+    write_json(PUBS_JSON, rebuilt)
 
-    write_json(PUBS_JSON, existing)
-    print(f"  publications: {added} added, {updated} updated, total {len(existing)}")
+    new_keys = {(p.get("doi") or p["title"].lower().strip()) for p in rebuilt}
+    old_keys = set(existing_meta.keys())
+    added = len(new_keys - old_keys)
+    removed = len(old_keys - new_keys)
+    kept = len(new_keys & old_keys)
+    msg = f"  publications: {len(rebuilt)} total ({added} new, {removed} removed, {kept} kept)"
+    if skipped:
+        msg += f", {skipped} skipped"
+    print(msg)
     return True
 
 

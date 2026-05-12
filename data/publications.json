@@ -54,7 +54,7 @@
     "abstract": "Open Source Software (OSS) sustainability relies on newcomers transitioning to core contributors, but this pipeline is broken, with most newcomers becoming inactive after initial contributions. Open Source Software for Social Good (OSS4SG) projects, which prioritize societal impact as their primary mission, may be associated with different newcomer-to-core transition outcomes than conventional OSS projects. We compared 375 projects (190 OSS4SG, 185 OSS), analyzing 92,721 contributors and 3.5 million commits. OSS4SG projects retain contributors at 2.2X higher rates and contributors have 19.6% higher probability of achieving core status. Early broad project exploration predicts core achievement (22.2% importance); conventional OSS concentrates on one dominant pathway (61.62% of transitions) while OSS4SG provides multiple pathways. Contrary to intuition, contributors who invest time learning the project before intensifying their contributions (Late Spike pattern) achieve core status 2.4-2.9X faster (21 weeks) than those who contribute intensively from day one (Early Spike pattern, 51-60 weeks). OSS4SG supports two effective temporal patterns while only Late Spike achieves fastest time-to-core in conventional OSS. Our findings suggest that finding a project aligned with personal values and taking time to understand the codebase before major contributions are key strategies for achieving core status. Our findings show that project mission is associated with measurably different environments for newcomer-to-core transitions and provide evidence-based guidance for newcomers and maintainers."
   },
   {
-    "id": "sameprojectdifferentstart",
+    "id": "mohamed-ouf-2026-same",
     "title": "Same Project, Different Start: How Contribution Events Shape Activity and Retention in Open Source",
     "authors": [
       "Mohamed Ouf",
@@ -70,12 +70,37 @@
     ],
     "doi": "",
     "links": {
-      "doi": "",
       "pdf": "https://arxiv.org/abs/2604.22120",
       "presentation": "https://queensuca-my.sharepoint.com/:p:/g/personal/lq21_queensu_ca/IQB8kfb67UC2SoDRgJqVQ6eDAbs54YyZKa6EZ0Ny7cjAgxA?e=oKkQwv"
     },
     "added_by": "auto",
-    "added_on": "2026-05-10"
+    "added_on": "2026-05-10",
+    "abstract": ""
+  },
+  {
+    "id": "10.48550/arXiv.2511.14711",
+    "title": "Why Do We Code? A Theory on Motivations and Challenges in Software Engineering from Education to Practice",
+    "authors": [
+      "Aaliyah Chang",
+      "Mariam Guizani",
+      "Brittany Johnson"
+    ],
+    "venue": "International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE @ ICSE)",
+    "venue_acronym": "CHASE",
+    "year": 2026,
+    "type": "conference",
+    "topics": [
+      "productivity",
+      "ese"
+    ],
+    "doi": "10.48550/arXiv.2511.14711",
+    "links": {
+      "doi": "https://doi.org/10.48550/arXiv.2511.14711",
+      "pdf": "https://arxiv.org/abs/2511.14711"
+    },
+    "added_by": "auto",
+    "added_on": "2026-05-10",
+    "abstract": "Motivations and challenges jointly shape how individuals enter, persist, and evolve within software engineering (SE), yet their interplay remains underexplored across the transition from education to professional practice. We conducted 15 semi-structured interviews and employed the Gioia Methodology, an adapted grounded theory methodology from organizational behavior, to inductively derive taxonomies of motivations and challenges, and build the Exposure-Pursuit-Evaluation (EPE) Process Model. Our findings reveal that impactful early exposure triggers intrinsic motivations, while non-impactful exposure requires an extrinsic push (e.g., career/ personal goals, external validation). We identify curiosity and avoiding alternatives as a distinct educational drivers, and barriers to belonging as the only challenge persisting across education and career. Our findings show that career progression challenges (e.g., navigating the corporate world) constrain extrinsic fulfillment while technical training challenges, barriers to belonging and threats to motivation constrain intrinsic fulfillment. The theory shows how unmet motivations and recurring challenges influence persistence, career shifts, or departure from the field. Our results provide a grounded model for designing interventions that strengthen intrinsic fulfillment and reduce systemic barriers in SE education and practice."
   },
   {
     "id": "10.1016/j.infsof.2025.107871",
@@ -101,16 +126,35 @@
     ],
     "doi": "10.1016/j.infsof.2025.107871",
     "links": {
-      "doi": "https://doi.org/10.1016/j.infsof.2025.107871",
-      "pdf": "",
-      "presentation": ""
+      "doi": "https://doi.org/10.1016/j.infsof.2025.107871"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
     "abstract": "Managing open-source software (OSS) projects requires managing communities of contributors. In particular, it is essential for project leaders to understand their community's diversity and turnover. We present CommunityTapestry, a dynamic real-time community dashboard, which presents key diversity and turnover signals that we identified from the literature and through participatory design sessions with stakeholders. We evaluated CommunityTapestry with an OSS project's contributors and Project Management Committee members, who explored the dashboard using their own project data. Our study results demonstrate that CommunityTapestry increased participants' awareness of their community composition and the diversity and turnover rates in the project. It helped them identify areas of improvement and gave them actionable information."
   },
   {
-    "id": "fromcommitstoconfidence",
+    "id": "michael-zhang-2025-design",
+    "title": "Design, Implementation and Evaluation of a Novel Programming Language Topic Classification Workflow",
+    "authors": [
+      "Michael Zhang",
+      "Yilong Tian",
+      "Mariam Guizani"
+    ],
+    "venue": "Conference of the Centre for Advanced Studies on Collaborative Research (CASCON)",
+    "venue_acronym": "CASCON",
+    "year": 2025,
+    "type": "conference",
+    "topics": [
+      "ml4se"
+    ],
+    "doi": "",
+    "links": {},
+    "added_by": "manual",
+    "added_on": "2026-05-11",
+    "abstract": ""
+  },
+  {
+    "id": "elijah-kayode-adejumo-2025-from",
     "title": "From Commits to Confidence: Towards Stability-Informed Risk Assessment in Open Source Software",
     "authors": [
       "Elijah Kayode Adejumo",
@@ -127,9 +171,7 @@
     ],
     "doi": "",
     "links": {
-      "doi": "",
-      "pdf": "https://arxiv.org/abs/2508.02487",
-      "presentation": ""
+      "pdf": "https://arxiv.org/abs/2508.02487"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -154,8 +196,7 @@
     "doi": "10.1109/CASCON66301.2025.00080",
     "links": {
       "doi": "https://doi.org/10.1109/CASCON66301.2025.00080",
-      "pdf": "https://arxiv.org/abs/2509.19587",
-      "presentation": ""
+      "pdf": "https://arxiv.org/abs/2509.19587"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -180,15 +221,14 @@
     "doi": "10.1145/3809494",
     "links": {
       "doi": "https://doi.org/10.1145/3809494",
-      "pdf": "https://arxiv.org/abs/2507.03156",
-      "presentation": ""
+      "pdf": "https://arxiv.org/abs/2507.03156"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
     "abstract": "Large language model assistants (LLM-assistants) present new opportunities to transform software development. Developers are increasingly adopting these tools across tasks, including coding, testing, debugging, documentation, and design. Yet, despite growing interest, there is no synthesis of how LLM-assistants affect software developer productivity. In this paper, we present a systematic review and mapping of 39 peer-reviewed studies published between January 2014 and December 2024 that examine this impact. Our analysis reveals that the majority of studies report considerable benefits from LLM-assistants, though a notable subset identifies critical risks. Commonly reported gains include accelerated development, minimized code search, and the automation of trivial and repetitive tasks. However, studies also highlight concerns around cognitive offloading and reduced team collaboration. Our study reveals that whether LLM-based assistants improve or degrade code quality remains unresolved, as existing studies report contradictory outcomes contingent on context and evaluation criteria. While the majority of studies (90%) adopt a multi-dimensional perspective by examining at least two SPACE dimensions, reflecting increased awareness of the complexity of developer productivity, only 15% extend beyond three dimensions, indicating substantial room for more integrated evaluations. Satisfaction, Performance, and Efficiency are the most frequently investigated dimensions, whereas Communication and Activity remain underexplored. Most studies are exploratory (59%) and methodologically diverse, but lack longitudinal and team-based evaluations. This review surfaces key research gaps and provides recommendations for future research and practice. All artifacts associated with this study are publicly available at https://zenodo.org/records/18489222."
   },
   {
-    "id": "towardsbridginglanguagegaps",
+    "id": "elijah-kayode-adejumo-2025-towards",
     "title": "Towards Bridging Language Gaps in OSS with LLM-Driven Documentation Translation",
     "authors": [
       "Elijah Kayode Adejumo",
@@ -206,63 +246,31 @@
     ],
     "doi": "",
     "links": {
-      "doi": "",
-      "pdf": "https://arxiv.org/abs/2508.02497",
-      "presentation": ""
+      "pdf": "https://arxiv.org/abs/2508.02497"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
     "abstract": "While open source communities attract diverse contributors across the globe, only a few open source software repositories provide essential documentation, such as ReadMe or CONTRIBUTING files, in languages other than English. Recently, large language models (LLMs) have demonstrated remarkable capabilities in a variety of software engineering tasks. We have also seen advances in the use of LLMs for translations in other domains and contexts. Despite this progress, little is known regarding the capabilities of LLMs in translating open-source technical documentation, which is often a mixture of natural language, code, URLs, and markdown formatting. To better understand the need and potential for LLMs to support translation of technical documentation in open source, we conducted an empirical evaluation of translation activity and translation capabilities of two powerful large language models (OpenAI ChatGPT 4 and Anthropic Claude). We found that translation activity is often community-driven and most frequent in larger repositories. A comparison of LLM performance as translators and evaluators of technical documentation suggests LLMs can provide accurate semantic translations but may struggle preserving structure and technical content. These findings highlight both the promise and the challenges of LLM-assisted documentation internationalization and provide a foundation towards automated LLM-driven support for creating and maintaining open source documentation."
   },
   {
-    "id": "10.48550/arXiv.2511.14711",
-    "title": "Why Do We Code? A Theory on Motivations and Challenges in Software Engineering from Education to Practice",
+    "id": "zeph-van-iterson-2024-comparing",
+    "title": "Comparing Developer Attraction and Turnover in OSS vs. OSS4SG Projects: An MSR Study",
     "authors": [
-      "Aaliyah Chang",
-      "Mariam Guizani",
-      "Brittany Johnson"
+      "Zeph Van Iterson"
     ],
-    "venue": "International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE @ ICSE)",
-    "venue_acronym": "CHASE",
-    "year": 2026,
+    "venue": "Inquiry@Queen's Undergraduate Research Conference Proceedings",
+    "venue_acronym": "",
+    "year": 2024,
     "type": "conference",
     "topics": [
-      "productivity",
-      "ese"
-    ],
-    "doi": "10.48550/arXiv.2511.14711",
-    "links": {
-      "doi": "https://doi.org/10.48550/arXiv.2511.14711",
-      "pdf": "https://arxiv.org/abs/2511.14711",
-      "presentation": ""
-    },
-    "added_by": "auto",
-    "added_on": "2026-05-10",
-    "abstract": "Motivations and challenges jointly shape how individuals enter, persist, and evolve within software engineering (SE), yet their interplay remains underexplored across the transition from education to professional practice. We conducted 15 semi-structured interviews and employed the Gioia Methodology, an adapted grounded theory methodology from organizational behavior, to inductively derive taxonomies of motivations and challenges, and build the Exposure-Pursuit-Evaluation (EPE) Process Model. Our findings reveal that impactful early exposure triggers intrinsic motivations, while non-impactful exposure requires an extrinsic push (e.g., career/ personal goals, external validation). We identify curiosity and avoiding alternatives as a distinct educational drivers, and barriers to belonging as the only challenge persisting across education and career. Our findings show that career progression challenges (e.g., navigating the corporate world) constrain extrinsic fulfillment while technical training challenges, barriers to belonging and threats to motivation constrain intrinsic fulfillment. The theory shows how unmet motivations and recurring challenges influence persistence, career shifts, or departure from the field. Our results provide a grounded model for designing interventions that strengthen intrinsic fulfillment and reduce systemic barriers in SE education and practice."
-  },
-  {
-    "id": "designimplementationevaluation",
-    "title": "Design, Implementation and Evaluation of a Novel Programming Language Topic Classification Workflow",
-    "authors": [
-      "Michael Zhang",
-      "Yilong Tian",
-      "Mariam Guizani"
-    ],
-    "venue": "Conference of the Centre for Advanced Studies on Collaborative Research (CASCON)",
-    "venue_acronym": "CASCON",
-    "year": 2025,
-    "type": "conference",
-    "topics": [
-      "ml4se"
+      "oss",
+      "msr"
     ],
     "doi": "",
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "presentation": ""
-    },
+    "links": {},
     "added_by": "manual",
-    "added_on": "2026-05-11"
+    "added_on": "2026-05-11",
+    "abstract": ""
   },
   {
     "id": "10.1007/978-1-4842-9651-6_27",
@@ -288,35 +296,11 @@
     "doi": "10.1007/978-1-4842-9651-6_27",
     "links": {
       "doi": "https://doi.org/10.1007/978-1-4842-9651-6_27",
-      "pdf": "https://doi.org/10.1007/978-1-4842-9651-6_27",
-      "presentation": ""
+      "pdf": "https://doi.org/10.1007/978-1-4842-9651-6_27"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
     "abstract": "How do you measure technology’s support for diverse populations in a way that is actionable, and can lead to more inclusive designs of the technology? This chapter presents a method and the validated GenderMag survey that powers the method. The survey measures diversity gaps in technology in a fine-grained way, and the method shows how to use it to translate an empirical study's findings into actionable design directions."
-  },
-  {
-    "id": "comparingdeveloperattraction",
-    "title": "Comparing Developer Attraction and Turnover in OSS vs. OSS4SG Projects: An MSR Study",
-    "authors": [
-      "Zeph Van Iterson"
-    ],
-    "venue": "Inquiry@Queen's Undergraduate Research Conference Proceedings",
-    "venue_acronym": "",
-    "year": 2024,
-    "type": "conference",
-    "topics": [
-      "oss",
-      "msr"
-    ],
-    "doi": "",
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "presentation": ""
-    },
-    "added_by": "manual",
-    "added_on": "2026-05-11"
   },
   {
     "id": "10.1109/ICSE48619.2023.00218",
@@ -338,8 +322,7 @@
     "doi": "10.1109/ICSE48619.2023.00218",
     "links": {
       "doi": "https://doi.org/10.1109/ICSE48619.2023.00218",
-      "pdf": "https://arxiv.org/pdf/2303.08266",
-      "presentation": ""
+      "pdf": "https://arxiv.org/pdf/2303.08266"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -365,8 +348,7 @@
     "doi": "10.1109/CHASE58964.2023.00024",
     "links": {
       "doi": "https://doi.org/10.1109/CHASE58964.2023.00024",
-      "pdf": "https://arxiv.org/pdf/2303.16344",
-      "presentation": ""
+      "pdf": "https://arxiv.org/pdf/2303.16344"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -395,15 +377,14 @@
     "doi": "10.48550/arXiv.2312.08543",
     "links": {
       "doi": "https://doi.org/10.48550/arXiv.2312.08543",
-      "pdf": "https://arxiv.org/abs/2312.08543",
-      "presentation": ""
+      "pdf": "https://arxiv.org/abs/2312.08543"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
     "abstract": "Managing open-source software (OSS) projects requires managing communities of contributors. In particular, it is essential for project leaders to understand their community's diversity and turnover. We present CommunityTapestry, a dynamic real-time community dashboard, which presents key diversity and turnover signals that we identified from the literature and through participatory design sessions with stakeholders. We evaluated CommunityTapestry with an OSS project's contributors and Project Management Committee members, who explored the dashboard using their own project data. Our study results demonstrate that CommunityTapestry increased participants' awareness of their community composition and the diversity and turnover rates in the project. It helped them identify areas of improvement and gave them actionable information."
   },
   {
-    "id": "adecadeofinformationarchitecture",
+    "id": "mariam-guizani-2022-a",
     "title": "A Decade of Information Architecture in HCI: A Systematic Literature Review",
     "authors": [
       "Mariam Guizani"
@@ -417,12 +398,11 @@
     ],
     "doi": "",
     "links": {
-      "doi": "",
-      "pdf": "https://arxiv.org/abs/2202.13412",
-      "presentation": ""
+      "pdf": "https://arxiv.org/abs/2202.13412"
     },
     "added_by": "auto",
-    "added_on": "2026-05-10"
+    "added_on": "2026-05-10",
+    "abstract": ""
   },
   {
     "id": "10.1145/3510458.3513020",
@@ -444,8 +424,7 @@
     "doi": "10.1145/3510458.3513020",
     "links": {
       "doi": "https://doi.org/10.1145/3510458.3513020",
-      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513020",
-      "presentation": ""
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513020"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -473,8 +452,7 @@
     "doi": "10.1145/3510458.3513009",
     "links": {
       "doi": "https://doi.org/10.1145/3510458.3513009",
-      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513009",
-      "presentation": ""
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513009"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -502,8 +480,7 @@
     "doi": "10.1145/3510458.3513008",
     "links": {
       "doi": "https://doi.org/10.1145/3510458.3513008",
-      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513008",
-      "presentation": ""
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3510458.3513008"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -532,9 +509,7 @@
     ],
     "doi": "10.1109/ICSE43902.2021.00128",
     "links": {
-      "doi": "https://doi.org/10.1109/ICSE43902.2021.00128",
-      "pdf": "",
-      "presentation": ""
+      "doi": "https://doi.org/10.1109/ICSE43902.2021.00128"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -563,8 +538,7 @@
     "doi": "10.1186/s13174-021-00140-z",
     "links": {
       "doi": "https://doi.org/10.1186/s13174-021-00140-z",
-      "pdf": "https://jisajournal.springeropen.com/track/pdf/10.1186/s13174-021-00140-z",
-      "presentation": ""
+      "pdf": "https://jisajournal.springeropen.com/track/pdf/10.1186/s13174-021-00140-z"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -590,8 +564,7 @@
     "doi": "10.1029/2020WR028013",
     "links": {
       "doi": "https://doi.org/10.1029/2020WR028013",
-      "pdf": "https://repository.library.noaa.gov/view/noaa/49814/noaa_49814_DS1.pdf",
-      "presentation": ""
+      "pdf": "https://repository.library.noaa.gov/view/noaa/49814/noaa_49814_DS1.pdf"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -620,8 +593,7 @@
     "doi": "10.1109/TSE.2021.3108032",
     "links": {
       "doi": "https://doi.org/10.1109/TSE.2021.3108032",
-      "pdf": "https://doi.org/10.1109/tse.2021.3108032",
-      "presentation": ""
+      "pdf": "https://doi.org/10.1109/tse.2021.3108032"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -654,8 +626,7 @@
     "doi": "10.1145/3479551",
     "links": {
       "doi": "https://doi.org/10.1145/3479551",
-      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3479551",
-      "presentation": ""
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3479551"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -680,8 +651,7 @@
     "doi": "10.1109/MS.2020.3019540",
     "links": {
       "doi": "https://doi.org/10.1109/MS.2020.3019540",
-      "pdf": "https://doi.org/10.1109/ms.2020.3019540",
-      "presentation": ""
+      "pdf": "https://doi.org/10.1109/ms.2020.3019540"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
@@ -707,15 +677,14 @@
     "doi": "10.1145/3415251",
     "links": {
       "doi": "https://doi.org/10.1145/3415251",
-      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3415251",
-      "presentation": ""
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3415251"
     },
     "added_by": "auto",
     "added_on": "2026-05-10",
     "abstract": "Open Source Software (OSS) development is a collaborative endeavor where expert developers, distributed around the globe create software solutions. Given this characteristic, OSS communities have been studied as technical communities, where stakeholders join and evolve in their careers based on their (often voluntary) code contributions to the project. However, the OSS landscape is slowly changing with more people and companies getting involved in OSS. This means that projects now need people in non-technical roles and activities to keep the project sustainable and evolving. In this paper, we focus on understanding the roles and activities that are part of the current OSS landscape and the different career pathways in OSS. By conducting and analyzing 17 interviews with OSS contributors who are well known in the community, we provide empirical evidence of the existence and importance of community-centric roles (e.g advocate, license manager, community founder) in addition to the well-known project-centric ones (e.g maintainer, core member). However, the community-centric roles typically remain hidden, since these roles may not leave traces in software repositories typically analyzed by researchers. We found that people can build a career in OSS through different roles and activities, with different backgrounds, including those not related to writing software. Furthermore, people's career pathways are fluid, moving between project and community-centric roles. Our work highlights that communities and researchers need to take action to acknowledge the importance of these varied roles, making these roles visible and well-recognized, which can ultimately help attract and retain more people in the OSS projects."
   },
   {
-    "id": "debuginclusivitybugs2020",
+    "id": "mariam-guizani-2020-how",
     "title": "How to Debug Inclusivity Bugs? An Empirical Investigation of Finding-to-Fixing with Information Architecture",
     "authors": [
       "Mariam Guizani",
@@ -734,16 +703,13 @@
       "tools"
     ],
     "doi": "",
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "presentation": ""
-    },
+    "links": {},
     "added_by": "auto",
-    "added_on": "2026-05-10"
+    "added_on": "2026-05-10",
+    "abstract": ""
   },
   {
-    "id": "visualanalytics2018",
+    "id": "mariam-guizani-2018-visual",
     "title": "Visual Analytics for Identifying Patterns in High-dimensional Decision and Objective Spaces of User-Preferred Conservation Plans",
     "authors": [
       "Mariam Guizani",
@@ -760,12 +726,9 @@
       "ese"
     ],
     "doi": "",
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "presentation": ""
-    },
+    "links": {},
     "added_by": "auto",
-    "added_on": "2026-05-10"
+    "added_on": "2026-05-10",
+    "abstract": ""
   }
 ]

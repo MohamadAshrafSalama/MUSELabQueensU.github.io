@@ -23,29 +23,27 @@ python3 -m venv .venv
 
 ---
 
-## Adding a publication
+## Publications
 
-1. Open `updates/publications/publications.xlsx`.
-2. Scroll to the first empty row and add the paper. The columns marked with a `*`
-   are required.
-3. For **Type**, click the cell and pick from the dropdown (`journal`,
-   `conference`, `book-chapter`, or `preprint`).
-4. For **Topics**, enter a comma-separated list. The valid codes are:
-   - `oss` (Open Source)
-   - `edi` (EDI)
-   - `msr` (Mining Software Repos)
-   - `productivity` (Developer Productivity)
-   - `ml4se` (ML for SE)
-   - `tools` (Tools)
-   - `ese` (Empirical SE)
+The `publications.xlsx` file is the **source of truth** for every paper on the
+site. Every paper has its own row. Each topic has its own column with an X-mark
+to check it (like a checkbox).
 
-   Example: `oss, msr`
-5. If you have a slides PDF, drop it in `updates/publications/files/` and enter
-   just the filename (e.g. `icse-2026-slides.pdf`) in the **Slides URL** column.
-6. Save and run `python scripts/update_site.py`.
+- **Add a paper:** scroll to the first empty row and fill it in.
+- **Edit a paper:** find its row and change the cells. The site updates next run.
+- **Delete a paper:** delete its row.
 
-Duplicate rows (same DOI or title) update existing entries instead of creating
-new ones, so it's safe to edit a paper by changing its row.
+Columns marked with `*` are required. The topic columns (Open Source, EDI,
+Mining Software Repos, Developer Productivity, ML for SE, Tools, Empirical SE)
+each accept `X` from a dropdown — put X in every topic that applies, leave the
+rest blank.
+
+If you have a slides PDF locally, drop it in `updates/publications/files/` and
+enter just the filename (e.g. `icse-2026.pdf`) in the **Slides URL** column.
+
+The script is **idempotent** — running it twice in a row with no Excel changes
+does nothing. There is no risk of duplicates: each run fully rebuilds the JSON
+from the Excel sheet.
 
 ## Adding or editing a member
 
