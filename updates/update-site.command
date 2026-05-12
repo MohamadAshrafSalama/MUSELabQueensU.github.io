@@ -3,7 +3,8 @@
 # It works on macOS. The Windows equivalent is update-site.bat.
 
 set -e
-cd "$(dirname "$0")"
+# Always operate from the project root, no matter where this file lives
+cd "$(dirname "$0")"/..
 
 echo "================================================"
 echo "  MUSE Lab — Update Site"

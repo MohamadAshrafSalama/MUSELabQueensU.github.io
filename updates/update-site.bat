@@ -2,7 +2,8 @@
 REM Double-click this file to apply your edits from the updates\ folder.
 REM This is the Windows equivalent of update-site.command (which is for Mac).
 
-cd /d "%~dp0"
+REM Always operate from the project root, no matter where this file lives
+cd /d "%~dp0\.."
 
 echo ================================================
 echo   MUSE Lab -- Update Site
