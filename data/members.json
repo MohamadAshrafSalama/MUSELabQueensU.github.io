@@ -19,9 +19,9 @@
     "name": "Amr Mohamed",
     "aliases": [],
     "role": "MASc (Fall 2024 - Pres)",
-    "status": "Graduate",
+    "status": "Alumni",
     "semantic_scholar_ids": [],
-    "active": true
+    "active": false
   },
   {
     "name": "Elias Frigui",
@@ -101,8 +101,8 @@
     "name": "Zeph Van Iterson",
     "aliases": [],
     "role": "Research Assistant (Mar 2024 - pres)",
-    "status": "Undergraduate",
+    "status": "Alumni",
     "semantic_scholar_ids": [],
-    "active": true
+    "active": false
   }
 ]
