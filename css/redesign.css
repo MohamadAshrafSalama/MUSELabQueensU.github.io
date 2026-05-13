@@ -1023,7 +1023,7 @@ h6,
   font-family: var(--sans);
 }
 
-/* ===== No page transitions — instant render ===== */
+/* ===== No page transitions, instant render ===== */
 
 /* ===== Typing cursor ===== */
 .hero-typing {

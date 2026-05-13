@@ -235,7 +235,7 @@ def interactive_classify(papers):
 
 def open_pr(new_papers):
     branch = f"auto/update-publications-{datetime.now().strftime('%Y-%m')}"
-    title = f"Update publications — {datetime.now().strftime('%B %Y')}"
+    title = f"Update publications for {datetime.now().strftime('%B %Y')}"
 
     body_lines = ["## New publications found\n"]
     for p in new_papers:

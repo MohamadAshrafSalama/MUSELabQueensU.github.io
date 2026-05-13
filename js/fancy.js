@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  // ===== 1. Hover prefetch — start loading pages on hover so clicks feel instant =====
+  // ===== 1. Hover prefetch: start loading pages on hover so clicks feel instant =====
   var prefetched = {};
   document.addEventListener('mouseover', function(e) {
     var link = e.target.closest('a');
