@@ -6,7 +6,7 @@ REM Always operate from the project root, no matter where this file lives
 cd /d "%~dp0\.."
 
 echo ================================================
-echo   MUSE Lab -- Update Site
+echo   MUSE Lab: Update Site
 echo ================================================
 echo.
 

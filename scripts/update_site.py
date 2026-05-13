@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-update_site.py — apply edits from the updates/ folder to the live site.
+update_site.py: apply edits from the updates/ folder to the live site.
 
 Workflow:
     1. Edit Excel sheets in updates/
@@ -528,11 +528,11 @@ def process_publications():
                 topics.append(code)
 
         if ptype not in TYPE_CODES:
-            print(f"  row {row_idx} ({title[:40]!r}): invalid Type {ptype_raw!r} — skipping")
+            print(f"  row {row_idx} ({title[:40]!r}): invalid Type {ptype_raw!r}, skipping")
             skipped += 1
             continue
         if not (authors and year and venue):
-            print(f"  row {row_idx} ({title[:40]!r}): missing required field — skipping")
+            print(f"  row {row_idx} ({title[:40]!r}): missing required field, skipping")
             skipped += 1
             continue
 
@@ -542,7 +542,7 @@ def process_publications():
         slides = str(get(row_idx, "Slides URL") or "").strip()
         abstract = str(get(row_idx, "Abstract") or "").strip()
 
-        # Slides may be a local filename; copy it to files/
+        # Slides may be a local filename, in which case we copy it into files/
         if slides and "://" not in slides and not slides.startswith("files/"):
             src = PUBS_FILES_DIR / slides
             if src.exists():
@@ -589,7 +589,7 @@ def process_publications():
     # Safety check: don't wipe everything by accident
     if not rebuilt and existing:
         print(
-            f"  publications: refusing to write empty list — Excel has 0 valid rows but "
+            f"  publications: refusing to write empty list. Excel has 0 valid rows but "
             f"JSON has {len(existing)}. Did you mean to delete every paper? "
             "If yes, set Title='__DELETE_ALL__' on row 2 and re-run."
         )

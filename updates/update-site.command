@@ -7,7 +7,7 @@ set -e
 cd "$(dirname "$0")"/..
 
 echo "================================================"
-echo "  MUSE Lab — Update Site"
+echo "  MUSE Lab: Update Site"
 echo "================================================"
 echo ""
 
