@@ -2,8 +2,16 @@
   {
     "name": "Aaliyah Chang",
     "aliases": [],
-    "role": "MASc Student in Electrical and Computer Engineering",
+    "role": "MASc (Fall 2025 - Pres)",
     "status": "Graduate",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Abdullah Mohsin",
+    "aliases": [],
+    "role": "Research Assistant (Apr 2026 - Pres)",
+    "status": "Undergraduate",
     "semantic_scholar_ids": [],
     "active": true
   },
@@ -30,6 +38,14 @@
     "status": "Alumni",
     "semantic_scholar_ids": [],
     "active": false
+  },
+  {
+    "name": "Hassaan Tayyab",
+    "aliases": [],
+    "role": "MITACS GRI'26 Intern",
+    "status": "Undergraduate",
+    "semantic_scholar_ids": [],
+    "active": true
   },
   {
     "name": "Mariam Guizani",
