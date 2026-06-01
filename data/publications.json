@@ -28,6 +28,32 @@
     "abstract": "Open Source Software for Social Good (OSS4SG) projects aim to address critical societal challenges, such as healthcare access and community safety. Understanding the community dynamics and contributor patterns in these projects is essential for ensuring their sustainability and long-term impact. However, while extensive research has focused on conventional Open Source Software (OSS), little is known about how the mission-driven nature of OSS4SG influences its development practices. To address this gap, we conduct a large-scale empirical study of 1,039 GitHub repositories, comprising 422 OSS4SG and 617 conventional OSS projects, to compare community structure, contributor engagement, and coding practices. Our findings reveal that OSS4SG projects foster significantly more stable and\"sticky\"(63.4%) communities, whereas conventional OSS projects are more\"magnetic\"(75.4%), attracting a high turnover of contributors. OSS4SG projects also demonstrate consistent engagement throughout the year, while conventional OSS communities exhibit seasonal fluctuations. Additionally, OSS4SG projects rely heavily on core contributors for both code quality and issue resolution, while conventional OSS projects leverage casual contributors for issue resolution, with core contributors focusing primarily on code quality."
   },
   {
+    "id": "10.1145/3803437.3805581",
+    "title": "At What Cost? Software Developers'Well-Being in the Age of GenAI",
+    "authors": [
+      "Mariam Guizani",
+      "Maduka Subasinghage",
+      "Sherlock A. Licorish",
+      "Sofia Ouhbi"
+    ],
+    "venue": "",
+    "venue_acronym": "",
+    "year": 2026,
+    "type": "conference",
+    "topics": [
+      "productivity",
+      "tools"
+    ],
+    "doi": "10.1145/3803437.3805581",
+    "links": {
+      "doi": "https://doi.org/10.1145/3803437.3805581",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-06-01"
+  },
+  {
     "id": "10.48550/arXiv.2601.23142",
     "title": "Do Good, Stay Longer? Temporal Patterns and Predictors of Newcomer-to-Core Transitions in Conventional OSS and OSS4SG",
     "authors": [
@@ -201,6 +227,30 @@
     "added_by": "auto",
     "added_on": "2026-05-10",
     "abstract": "User stories are essential in agile development, yet often missing or outdated in legacy and poorly documented systems. We investigate whether large language models (LLMs) can automatically recover user stories directly from source code and how prompt design impacts output quality. Using 1,750 annotated C++ snippets of varying complexity, we evaluate five state-of-the-art LLMs across six prompting strategies. Results show that all models achieve, on average, an F1 score of 0.8 for code up to 200 NLOC. Our findings show that a single illustrative example enables the smallest model (8B) to match the performance of a much larger 70B model. In contrast, structured reasoning via Chain-of-Thought offers only marginal gains, primarily for larger models."
+  },
+  {
+    "id": "10.48550/arXiv.2507.03156",
+    "title": "The Impact of LLM-Assistants on Software Developer Productivity: A Systematic Literature Review",
+    "authors": [
+      "Amr Mohamed",
+      "Maram Assi",
+      "Mariam Guizani"
+    ],
+    "venue": "arXiv.org",
+    "venue_acronym": "arXiv",
+    "year": 2025,
+    "type": "journal",
+    "topics": [
+      "productivity"
+    ],
+    "doi": "10.48550/arXiv.2507.03156",
+    "links": {
+      "doi": "https://doi.org/10.48550/arXiv.2507.03156",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-06-01"
   },
   {
     "id": "10.1145/3809494",
@@ -631,6 +681,34 @@
     "added_by": "auto",
     "added_on": "2026-05-10",
     "abstract": "Open source communities hosted in large foundations operate in a complex socio-technical ecosystem, which includes a heterogeneous mix of projects and stakeholders. Previous work has thus far investigated the challenges faced in OSS communities from the point of view of specific stakeholders, primarily at the level of individual projects. None have yet studied the challenges faced within a large, federated open source organization. In this paper, we aim to bridge this gap to identify ongoing challenges contributors face in a mature OSS organization. To do so, we surveyed 624 contributors at the Apache Software Foundation (ASF) and ran 11 semi-structured follow up interviews. We validated our findings through member checking with the interviewees as well as the ASF Diversity and Inclusion (D&I) committee. The contributions of this paper include: (1) an empirically-evidenced conceptual model of the 88 challenges that contributors face in a mature OSS foundation and (2) a set of 48 community-recommended strategies for alleviating these challenges. Our results show that even well-established and mature organizations still face a variety of individual and project-specific challenges and that it is difficult to design a comprehensive set of processes and guidelines to match the needs and expectations of a diverse and large federated community. Our conceptual challenges model and associated strategies to mitigate them can provide guidance to other OSS foundations and projects helping them in building better support processes and tools to create a successful, thriving community of contributors."
+  },
+  {
+    "id": "thepotofgoldattheendoftherainbowwhatissuccessforopensourcecontributors",
+    "title": "The Pot of Gold at the End of the Rainbow: What is Success for Open Source Contributors?",
+    "authors": [
+      "Bianca Trinkenreich",
+      "Mariam Guizani",
+      "I. Wiese",
+      "T. Conte",
+      "M. Gerosa",
+      "Anita Sarma",
+      "I. Steinmacher"
+    ],
+    "venue": "arXiv.org",
+    "venue_acronym": "arXiv",
+    "year": 2021,
+    "type": "journal",
+    "topics": [
+      "oss"
+    ],
+    "doi": "",
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "presentation": ""
+    },
+    "added_by": "auto",
+    "added_on": "2026-06-01"
   },
   {
     "id": "10.1109/MS.2020.3019540",
