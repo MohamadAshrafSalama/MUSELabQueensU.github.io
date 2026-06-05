@@ -611,26 +611,6 @@ body.page-body {
   padding: 14px;
 }
 
-.pub-stats-bar {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 8px;
-  font-family: var(--sans);
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.pub-stat__value {
-  font-weight: 700;
-  color: var(--muse-navy);
-}
-
-.pub-stat-sep {
-  color: var(--line-strong);
-  margin: 0 4px;
-}
-
 .pub-card__tags {
   display: flex;
   flex-wrap: wrap;

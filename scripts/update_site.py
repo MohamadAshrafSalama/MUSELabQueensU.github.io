@@ -417,7 +417,7 @@ def export_existing_members():
         "Amr Mohamed":      {"status": "Graduate",      "role": "MASc (Fall 2024 - Pres)",    "email": "amr.m@queensu.ca", "hobbies": "Chess, Piano, Guitar",                "photo": "amrmohamed.jpg"},
         "Michael Zhang":    {"status": "Graduate",      "role": "MEng (Mar 2024 - Pres)",     "email": "18jz111@queensu.ca","hobbies": "Skiing, camping, hiking, card and board games", "photo": "michaelzhang.jpeg"},
         "Aaliyah Chang":    {"status": "Graduate",      "role": "MASc Student in Electrical and Computer Engineering", "email": "TBD", "hobbies": "TBD", "photo": "aaliyah-chang.png"},
-        "Yawar Ashraf":     {"status": "Graduate",      "role": "MASc Student",               "email": "TBD",              "hobbies": "TBD",                                  "photo": "yawar-ashraf.png"},
+        "Yawar Ashraf":     {"status": "Graduate",      "role": "MASc Student",               "email": "TBD",              "hobbies": "Squash, Reading",                      "photo": "yawar-ashraf.png"},
         "Zeph Van Iterson": {"status": "Undergraduate", "role": "Research Assistant (Mar 2024 - pres)", "email": "20zrvi@queensu.ca", "hobbies": "Cooking, Movies",          "photo": "zephvaniterson.jpg"},
         "Haoyu Li":         {"status": "Alumni",        "role": "MEng (Mar 2024 - Nov 2024)", "email": "17hl66@queensu.ca","hobbies": "",                                    "photo": "default.jpg"},
         "Elias Frigui":     {"status": "Alumni",        "role": "Research Assistant (Mar 2024 - Aug 2024)", "email": "21ef32@queensu.ca", "hobbies": "",                     "photo": "default.jpg"},

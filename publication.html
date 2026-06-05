@@ -49,13 +49,6 @@
     <div class="container mt-4">
         <div class="publication-hero content-card">
             <h1 class="page-title mb-3">Publications</h1>
-            <div class="pub-stats-bar">
-                <span class="pub-stat"><span class="pub-stat__value" data-count="499">0</span> citations</span>
-                <span class="pub-stat-sep">&middot;</span>
-                <span class="pub-stat"><span class="pub-stat__value" data-count="15">0</span> h-index</span>
-                <span class="pub-stat-sep">&middot;</span>
-                <span class="pub-stat"><span class="pub-stat__value" id="pub-count" data-count="0">0</span> publications</span>
-            </div>
         </div>
 
         <div class="pub-topics">
@@ -250,30 +243,10 @@
             });
         }
 
-        function animateCounters() {
-            document.querySelectorAll('.pub-stat__value').forEach(function(el) {
-                var target = parseInt(el.getAttribute('data-count'), 10);
-                var duration = 1200;
-                var start = null;
-                function step(ts) {
-                    if (!start) start = ts;
-                    var progress = Math.min((ts - start) / duration, 1);
-                    var ease = 1 - Math.pow(1 - progress, 3);
-                    el.textContent = Math.floor(target * ease);
-                    if (progress < 1) requestAnimationFrame(step);
-                    else el.textContent = target;
-                }
-                requestAnimationFrame(step);
-            });
-        }
-
         fetch('data/publications.json')
             .then(function(res) { return res.json(); })
             .then(function(papers) {
                 papers.sort(function(a, b) { return b.year - a.year; });
-
-                var pubCountEl = document.getElementById('pub-count');
-                if (pubCountEl) pubCountEl.setAttribute('data-count', papers.length);
 
                 var container = document.getElementById('pub-list');
                 var html = '';
@@ -331,8 +304,6 @@
                         filterCards();
                     });
                 });
-
-                animateCounters();
             });
     })();
     </script>
