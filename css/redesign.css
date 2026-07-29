@@ -239,6 +239,21 @@ body.page-body {
   margin: 0;
 }
 
+.contact-tile__mail {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muse-orange);
+  text-decoration: none;
+}
+
+.contact-tile__mail:hover {
+  color: var(--muse-orange-deep);
+  text-decoration: underline;
+}
+
 .rd-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
