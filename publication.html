@@ -40,6 +40,7 @@
                     <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
                     <li class="nav-item"><a class="nav-link active" href="publication.html">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item nav-cta"><a class="nav-cta__btn" href="index.html#contact">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -105,7 +106,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
     (function() {
         var TOPIC_LABELS = {
@@ -152,6 +153,14 @@
             var div = document.createElement('div');
             div.textContent = str;
             return div.innerHTML;
+        }
+
+        // Only allow http(s) links, and escape before placing inside href="".
+        function safeUrl(u) {
+            if (!u) return '';
+            u = String(u).trim();
+            if (!/^https?:\/\//i.test(u)) return '';
+            return escapeHtml(u);
         }
 
         function generateBibtex(paper) {
@@ -219,14 +228,14 @@
             html += '</div>';
 
             html += '<div class="pub-actions">';
-            if (paper.links && paper.links.doi) {
-                html += '<a href="' + paper.links.doi + '" class="pub-action" target="_blank" rel="noopener" aria-label="DOI"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a>';
+            if (paper.links && safeUrl(paper.links.doi)) {
+                html += '<a href="' + safeUrl(paper.links.doi) + '" class="pub-action" target="_blank" rel="noopener" aria-label="DOI"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a>';
             }
-            if (paper.links && paper.links.pdf) {
-                html += '<a href="' + paper.links.pdf + '" class="pub-action" target="_blank" rel="noopener" aria-label="PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></a>';
+            if (paper.links && safeUrl(paper.links.pdf)) {
+                html += '<a href="' + safeUrl(paper.links.pdf) + '" class="pub-action" target="_blank" rel="noopener" aria-label="PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></a>';
             }
-            if (paper.links && paper.links.presentation) {
-                html += '<a href="' + paper.links.presentation + '" class="pub-action" target="_blank" rel="noopener" aria-label="Slides"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></a>';
+            if (paper.links && safeUrl(paper.links.presentation)) {
+                html += '<a href="' + safeUrl(paper.links.presentation) + '" class="pub-action" target="_blank" rel="noopener" aria-label="Slides"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></a>';
             }
             html += '<button class="pub-action pub-bibtex-btn" type="button" aria-label="Copy BibTeX"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></button>';
             html += '</div>';

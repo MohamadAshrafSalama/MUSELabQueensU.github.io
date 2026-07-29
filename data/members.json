@@ -42,7 +42,7 @@
   {
     "name": "Hassaan Tayyab",
     "aliases": [],
-    "role": "MITACS GRI'26 Intern",
+    "role": "Research Assistant (Jun 2026 - Pres)",
     "status": "Undergraduate",
     "semantic_scholar_ids": [],
     "active": true
@@ -84,7 +84,7 @@
   {
     "name": "Robyn Elliot",
     "aliases": [],
-    "role": "PhD (Fall 2024 - pres)",
+    "role": "PhD (Fall 2024 - Pres)",
     "status": "Graduate",
     "semantic_scholar_ids": [],
     "active": true
@@ -94,6 +94,14 @@
     "aliases": [],
     "role": "Research Assistant (May 2026 - Pres)",
     "status": "Undergraduate",
+    "semantic_scholar_ids": [],
+    "active": true
+  },
+  {
+    "name": "Sophia Thurston",
+    "aliases": [],
+    "role": "MASc (Fall 2026 - Pres)",
+    "status": "Graduate",
     "semantic_scholar_ids": [],
     "active": true
   },

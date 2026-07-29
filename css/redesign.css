@@ -239,18 +239,105 @@ body.page-body {
   margin: 0;
 }
 
-.contact-tile__mail {
+/* ===== Contact CTA: navbar button + home panel ===== */
+.nav-cta {
+  align-self: center;
+  margin-left: 12px;
+}
+
+.nav-cta__btn {
   display: inline-block;
-  margin-top: 12px;
   font-family: var(--sans);
   font-size: 15px;
   font-weight: 600;
   color: var(--muse-orange);
+  background: transparent;
+  border: 1.5px solid var(--muse-orange);
+  border-radius: 999px;
+  padding: 7px 18px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.nav-cta__btn:hover,
+.nav-cta__btn:focus-visible {
+  background: var(--muse-orange);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(230, 81, 0, 0.28);
   text-decoration: none;
 }
 
-.contact-tile__mail:hover {
-  color: var(--muse-orange-deep);
+@media (max-width: 991.98px) {
+  .nav-cta {
+    margin-left: 0;
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+}
+
+#contact {
+  scroll-margin-top: 90px;
+}
+
+.contact-panel {
+  text-align: center;
+  padding: clamp(36px, 5vw, 60px) clamp(20px, 4vw, 48px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-panel .section-title {
+  margin-bottom: 12px;
+}
+
+.contact-panel__lead {
+  color: var(--muted);
+  max-width: 56ch;
+  margin: 0 auto 28px;
+}
+
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--muse-orange);
+  border: none;
+  border-radius: 999px;
+  padding: 14px 34px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn-contact:hover,
+.btn-contact:focus-visible {
+  background: var(--muse-orange-deep);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(230, 81, 0, 0.3);
+  text-decoration: none;
+}
+
+.contact-panel__alt {
+  margin: 18px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact-panel__alt a {
+  color: var(--muse-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-panel__alt a:hover {
   text-decoration: underline;
 }
 

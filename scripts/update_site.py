@@ -13,6 +13,7 @@ and the auto-generated sections of members.html and index.html.
 """
 
 import argparse
+import html
 import json
 import re
 import shutil
@@ -725,20 +726,39 @@ def read_member_folder(folder):
     }
 
 
+DEGREE_ORDER = ["PhD", "MASc", "MEng"]
+
+
+def degree_rank(m):
+    for i, degree in enumerate(DEGREE_ORDER):
+        if m["role"].startswith(degree):
+            return i
+    return len(DEGREE_ORDER)
+
+
+def format_role(role):
+    """Bold the leading title. 'MASc (Fall 2024 - Pres)' -> '<strong>MASc</strong> (Fall 2024 - Pres)'."""
+    for sep in (" (", " & ", " Student"):
+        i = role.find(sep)
+        if i > 0:
+            return f"<strong>{html.escape(role[:i])}</strong>{html.escape(role[i:])}"
+    return f"<strong>{html.escape(role)}</strong>"
+
+
 def render_member_card(m, is_pi=False):
     card_class = "card principal-investigator-card h-100" if is_pi else "card h-100"
+    name = html.escape(m["name"])
+    photo = html.escape(m["photo"])
     lines = [
-        '           <div class="col">' if not is_pi else '       <div class="col-md-4">',
+        '           <div class="col">' if not is_pi else '       <div class="col">',
         f'               <div class="{card_class}">',
-        f'                   <img src="photos/{m["photo"]}" class="card-img-top" alt="Photo of {m["name"]}">',
+        f'                   <img src="photos/{photo}" class="card-img-top" alt="Photo of {name}">',
         '                   <div class="card-body">',
-        f'                       <h5 class="card-title">{m["name"]}</h5>',
-        f'                       <h6 class="card-subtitle mb-2 text-muted">{m["role"]}</h6>',
+        f'                       <h5 class="card-title">{name}</h5>',
+        f'                       <h6 class="card-subtitle mb-2 text-muted">{format_role(m["role"])}</h6>',
     ]
-    if m["email"]:
-        lines.append(f'                       <p class="card-text">Email: {m["email"]}</p>')
     if m["hobbies"]:
-        lines.append(f'                       <p class="card-text">Hobbies: <i>{m["hobbies"]}</i></p>')
+        lines.append(f'                       <p class="card-text">Hobbies: <i>{html.escape(m["hobbies"])}</i></p>')
     lines.append('                   </div>')
     lines.append('               </div>')
     lines.append('           </div>')
@@ -797,26 +817,30 @@ def process_members():
     undergrad = [m for m in members if m["status"] == "Undergraduate"]
     alumni = [m for m in members if m["status"] == "Alumni"]
 
+    # PhD before MASc before MEng. Stable, so folder order breaks ties.
+    grad.sort(key=degree_rank)
+
+    # Everyone still in the lab shares one section: PI first, then grads, then undergrads.
+    active = pi + grad + undergrad
+
     # Build the full block
     blocks = []
-    if pi:
-        m = pi[0]
+    if active:
+        count = len(active)
+        label = "member" if count == 1 else "members"
+        cards = [render_member_card(m, is_pi=(m["status"] == "PI")) for m in active]
         blocks.append(
             '<div class="container">\n'
             '  <div class="role-heading mt-4 mb-4">\n'
-            '  <h1 class="page-title mb-0">Principal Investigator</h1>\n'
-            '  <span class="role-count">1 member</span>\n'
+            '  <h1 class="page-title mb-0">Members</h1>\n'
+            f'  <span class="role-count">{count} {label}</span>\n'
             '  </div>\n'
             '  <p class="page-intro">Meet the researchers, students, and contributors who are shaping work at MUSE Lab.</p>\n'
-            '  <div class="row g-4">\n'
-            + render_member_card(m, is_pi=True) + '\n'
+            '  <div class="row row-cols-1 row-cols-md-5 g-4">\n'
+            + "\n".join(cards) + '\n'
             '  </div>\n'
             '</div>'
         )
-    if grad:
-        blocks.append(render_member_section("Graduate Students", grad))
-    if undergrad:
-        blocks.append(render_member_section("Undergraduate Students", undergrad))
     if alumni:
         blocks.append(render_member_section("Alumni", alumni))
 
